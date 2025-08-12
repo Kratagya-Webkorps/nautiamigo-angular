@@ -1,0 +1,30 @@
+<header class="site-header">
+  <h1 class="brand-name">NAUTI AMIGO</h1>
+  <h2 class="section-title">Our Packages</h2>
+</header>
+
+<div class="packages-section">
+  <div class="packages-container">
+    <div class="packages-row top">
+      <div class="package-item" *ngFor="let package of topPackages">
+        <img class="package-img" [src]="package.image" [alt]="package.name">
+        <button class="book-button" >BOOK</button>
+        <div class="package-overlay">
+          <div class="package-price">{{ package.price }}</div>
+          <div class="package-name">{{ package.name }}</div>
+          <div class="package-line"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="packages-row bottom">
+      <div class="bottom-package-item" *ngFor="let package of bottomPackages">
+        <img class="package-img" [src]="package.image" [alt]="package.name">
+        <button class="book-button-bottom">BOOK</button>
+        <div class="bottom-price">{{ package.price }}</div>
+        <div class="bottom-title">{{ package.name }}</div>
+        <div class="bottom-line"></div>
+      </div>
+    </div>
+  </div>
+</div>

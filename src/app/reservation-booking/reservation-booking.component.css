@@ -1,0 +1,228 @@
+/* =============================================================================
+   reservation-booking.component.css
+   =============================================================================
+   Styles for the reservation section with overlapping booking form
+   and a 4-item client carousel positioned precisely.
+   ============================================================================= */
+
+/* ------------------------- Testimonials Section --------------------------- */
+.testimonials {
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 0;      /* we use overlap, so no extra bottom padding */
+    z-index: 2;
+  }
+  
+  .background {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.2);  /* dark overlay */
+    z-index: 1;
+  }
+  
+  .background > .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Star rating */
+  .star-rating {
+    font-size: 1.2rem;
+    color: #C39C5D;
+    margin-right: 4px;
+  }
+  
+  /* Reservation info */
+  .reservations {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .reservations .icon {
+    font-size: 1.8rem;
+    margin-right: 12px;
+    color: #C39C5D;
+  }
+  
+  .reservations .text p,
+  .reservations .text a {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .reservations .text p.color-1,
+  .reservations .text a.color-1 {
+    color: #C39C5D;
+  }
+  
+  .testimonials p small {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    vertical-align: middle;
+  }
+  
+  /* ---------------------- Booking Form Box ----------------------- */
+  .booking-box {
+    background-color: #181818;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    
+    /* pull down into white section by 36px */
+    position: relative;
+    transform: translateY(36px);
+    z-index: 3;
+  }
+  
+  /* Headings */
+  .booking-box .head-box h6 {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C39C5D;
+    margin-bottom: 6px;
+  }
+  
+  .booking-box .head-box h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Form controls */
+  .input1_wrapper,
+  .select1_wrapper {
+    margin-bottom: 16px;
+  }
+  
+  .input1_wrapper label,
+  .select1_wrapper label {
+    display: block;
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    margin-bottom: 6px;
+  }
+  
+  .input10_inner input,
+  .select1_inner select,
+  .booking-inner input[type="date"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 12px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .input10_inner input::placeholder,
+  .booking-inner input[type="date"]::placeholder {
+    color: #7a7a7a;
+  }
+  
+  .select1_inner {
+    position: relative;
+  }
+  
+  .select1_inner select {
+    appearance: none;
+    background-image: url('../../assets/icons/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    background-size: 12px;
+  }
+  
+  /* Date picker icon (WebKit) */
+  .booking-inner input[type="date"] {
+    padding-right: 36px;
+  }
+  
+  .booking-inner input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 12px;
+    color: #C39C5D;
+    opacity: 1;
+  }
+  
+  /* Submit button */
+  .btn-form1-submit {
+    width: 100%;
+    height: 56px;
+    background-color: #C39C5D;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-form1-submit:hover {
+    background-color: #aa8345;
+  }
+  
+  /* --------------------------- Clients Carousel ------------------------- */
+  .clients {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    margin-top: -36px;      /* maintain seamless overlap */
+  }
+  
+  /* Positioning & gutters for the swiper viewport */
+  .clients-swiper {
+    padding-left: 35px;     /* exact left inset */
+    padding-right: 44px;    /* exact right inset */
+    margin-top: 50px;       /* space from top of white area */
+    margin-bottom: 40px;    /* space below carousel */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Each slide holds one logo */
+  .clients-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .clients-logo img {
+    max-height: 60px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    object-fit: contain;
+  }
+  
+  .clients-logo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  /* Swiper customization */
+  .clients-swiper {
+    --swiper-navigation-color: #C39C5D;
+    --swiper-pagination-color: #C39C5D;
+  }
+  
+  .clients-swiper::part(button-next),
+  .clients-swiper::part(button-prev),
+  .clients-swiper::part(pagination) {
+    display: none;
+  }
+  

@@ -1,0 +1,253 @@
+/* Additional Services Section Styles */
+.facilties {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-padding {
+    padding: 120px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+  
+  /* Section Headers */
+  .section-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #c9a961;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #c9a961;
+    display: block;
+    margin: 30px auto 0;
+  }
+  
+  /* Service Cards */
+  .single-facility {
+    position: relative;
+    text-align: center;
+    padding: 60px 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Hover effects removed */
+  
+  /* Icons */
+  .single-facility > span {
+    font-size: 64px;
+    color: #c9a961;
+    margin-bottom: 30px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Icon hover effects removed */
+  
+  /* Service Title */
+  .single-facility h5 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Title hover effects removed */
+  
+  /* Service Description */
+  .single-facility p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Text hover effects removed */
+  
+  /* Background Shape */
+  .facility-shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.03;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .facility-shape span {
+    font-size: 180px;
+    color: #c9a961;
+    display: block;
+  }
+  
+  /* Shape hover effects removed */
+  
+  /* Animation Classes */
+  .animate-box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .animate-box.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Flaticon Icons */
+  @font-face {
+    font-family: 'Flaticon';
+    src: url('https://cdn.jsdelivr.net/npm/flat-ui-fonts@1.0.0/fonts/Flaticon.eot');
+    src: url('https://cdn.jsdelivr.net/npm/flat-ui-fonts@1.0.0/fonts/Flaticon.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/npm/flat-ui-fonts@1.0.0/fonts/Flaticon.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/npm/flat-ui-fonts@1.0.0/fonts/Flaticon.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/npm/flat-ui-fonts@1.0.0/fonts/Flaticon.svg#Flaticon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: 'Flaticon';
+    font-size: 60px;
+    font-style: normal;
+    margin-left: 0;
+    color: #c9a961;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .flaticon-world:before { content: "\f100"; }
+  .flaticon-car:before { content: "\f101"; }
+  .flaticon-bed:before { content: "\f102"; }
+  .flaticon-swimming:before { content: "\f103"; }
+  .flaticon-wifi:before { content: "\f104"; }
+  .flaticon-breakfast:before { content: "\f105"; }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .col-md-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    
+    .section-title {
+      font-size: 36px;
+    }
+    
+    .single-facility {
+      height: auto;
+      min-height: 280px;
+      padding: 40px 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .section-padding {
+      padding: 80px 0;
+    }
+    
+    .section-title {
+      font-size: 28px;
+    }
+    
+    .single-facility {
+      margin-bottom: 30px;
+      padding: 40px 20px;
+    }
+    
+    .single-facility > span {
+      font-size: 48px;
+    }
+    
+    .facility-shape span {
+      font-size: 120px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .container {
+      padding: 0 20px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    
+    .section-subtitle {
+      font-size: 12px;
+    }
+  }
