@@ -11,10 +11,11 @@
 }
 
 .site-header {
-  position: absolute;
-  top: 125px;
-  left: 355px;
+  position: relative;
+  width: 100%;
+  padding: 125px 0 0 355px;
   z-index: 100;
+  margin-bottom: 35px;
 }
 
 .brand-name {
@@ -50,7 +51,10 @@
   min-height: 100vh;
   position: relative;
   background: transparent;
-  margin-top: 35px; /* Add 35px gap after the heading */
+}
+
+.packages-container {
+  width: 100%;
 }
 
 .packages-images {
@@ -69,7 +73,6 @@
 }
 
 .packages-row.top {
-  margin-top: 250px;
   margin-left: 356px;
   margin-right: 356px;
   margin-bottom: 20px;
@@ -110,7 +113,7 @@
   line-height: 18.8px;
   letter-spacing: 3px;
   color: #FFFFFF;
-  margin-top: 230px; /* 255px - 225px (from top of section) */
+  margin-top: 230px;
   margin-left: 0;
 }
 
@@ -121,7 +124,7 @@
   line-height: 33.8px;
   letter-spacing: 0px;
   color: #FFFFFF;
-  margin-top: 22px; /* 295px - 255px - 18.8px (previous line height) */
+  margin-top: 22px;
   margin-left: 0;
 }
 
@@ -129,7 +132,7 @@
   width: 55px;
   height: 1px;
   background-color: #FFFFFF;
-  margin-top: 8.2px; /* 337px - 295px - 33.8px (previous line height) */
+  margin-top: 8.2px;
 }
 
 .packages-row.bottom {
@@ -150,6 +153,10 @@
   .packages-row.top, .packages-row.bottom {
     margin-left: 2vw;
     margin-right: 2vw;
+  }
+  
+  .site-header {
+    padding-left: 2vw;
   }
 }
 
@@ -259,6 +266,22 @@
 }
 
 @media (max-width: 1200px) {
+  .site-header {
+    padding: 60px 0 0 5vw;
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    font-size: 13px;
+    letter-spacing: 4px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    line-height: 45px;
+    margin: 15px 0 0 0;
+  }
+  
   .packages-row.top, .packages-row.bottom {
     flex-direction: column;
     align-items: center;
@@ -266,14 +289,17 @@
     margin-right: 0;
     gap: 20px;
   }
+  
   .packages-row.top img, .packages-row.bottom img {
     width: 90vw !important;
     height: auto !important;
     max-width: 100%;
   }
+  
   .book-button {
     left: calc(90vw - 60px);
   }
+  
   .book-button-bottom {
     right: 20px;
   }
@@ -287,5 +313,23 @@
   .bottom-title,
   .bottom-line {
     left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 40px 0 0 5vw;
+    margin-bottom: 15px;
+  }
+  
+  .brand-name {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    line-height: 35px;
+    margin: 10px 0 0 0;
   }
 }
