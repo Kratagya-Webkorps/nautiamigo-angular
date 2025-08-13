@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 interface TopFeature {
   icon: string;
@@ -65,6 +66,8 @@ interface CruiseOffer {
 
 @Component({
   selector: 'app-cruise-packages',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './cruise-packages.component.html',
   styleUrls: ['./cruise-packages.component.css']
 })
