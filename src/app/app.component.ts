@@ -11,11 +11,12 @@ import {ReservationBookingComponent} from "./reservation-booking/reservation-boo
 import {TestimonialsComponent} from "./testimonials/testimonials.component"
 import {AdditionalServicesComponent} from "./additional-services/additional-services.component"
 import {EventsSectionComponent} from "./events-section/events-section.component"
+import {CruisePackagesComponent} from "./cruise-packages/cruise-packages.component"
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet, NavbarComponent,FooterComponent,HeroSectionComponent,AboutSectionComponent,PackagesSectionComponent,ServicesSectionComponent,ReservationBookingComponent,TestimonialsComponent,AdditionalServicesComponent,EventsSectionComponent],
+  imports: [RouterOutlet, NavbarComponent,FooterComponent,HeroSectionComponent,AboutSectionComponent,PackagesSectionComponent,ServicesSectionComponent,ReservationBookingComponent,TestimonialsComponent,AdditionalServicesComponent,EventsSectionComponent,CruisePackagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,101 @@
+<section class="section-padding">
+    <div class="col-md-12 container">
+      <div class="section-subtitle">NAUTI AMIGO Luxury Cruise</div>
+      <div class="section-title">Our Packages</div>
+      <div id="cruise-container">
+        
+        <div class="cruise-card" *ngFor="let offer of offers">
+          <div class="card">
+            <div class="flex flex-row-custom g-1">
+              
+              <!-- Image Section -->
+              <div class="slider">
+                <div navigation="true" pagination="true" autoplay="true" loop="true">
+                  <div>
+                    <div class="cardImg">
+                      <img [src]="offer.image" [alt]="offer.title" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Info Section -->
+              <div class="info">
+                <span class="rating">
+                  <strong>
+                    <svg id="star-full" viewBox="0 0 475.075 475.075">
+                      <path
+                        data-card-section="Reviews"
+                        fill="#FFA500"
+                        d="M475.075,186.573c0-7.043-5.328-11.42-15.992-13.135L315.766,152.6L251.529,22.694c-3.614-7.804-8.281-11.704-13.99-11.704 
+                          c-5.708,0-10.372,3.9-13.989,11.704L159.31,152.6L15.986,173.438C5.33,175.153,0,179.53,0,186.573c0,3.999,2.38,8.567,7.139,13.706 
+                          l103.924,101.068L86.51,444.096c-0.381,2.666-0.57,4.575-0.57,5.712c0,3.997,0.998,7.374,2.996,10.136 
+                          c1.997,2.766,4.993,4.142,8.992,4.142c3.428,0,7.233-1.137,11.42-3.423l128.188-67.386l128.197,67.386 
+                          c4.004,2.286,7.81,3.423,11.416,3.423c3.819,0,6.715-1.376,8.713-4.142c1.992-2.758,2.991-6.139,2.991-10.136 
+                          c0-2.471-0.096-4.374-0.287-5.712l-24.555-142.749l103.637-101.068C472.604,195.33,475.075,190.76,475.075,186.573z"
+                      ></path>
+                    </svg>
+                    {{ offer.rating }}
+                  </strong>
+                  ({{ offer.reviews }})
+                </span>
+                
+                <h3>{{ offer.title }}</h3>
+                
+                <div class="detail-content d-ele">
+                  <ul>
+                    <li *ngFor="let item of offer.mustKnow">{{ item.about1 }}</li>
+                  </ul>
+                </div>
+                
+                <div class="show-full-info">
+                  <div class="link link-cursor" (click)="goToService(offer.routingUrl)">
+                    Show inclusions & important info
+                    <img src="./img/images/svg/arrow-ico.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Payments Section -->
+              <div class="payments">
+                <div class="amount">
+                  <h3>
+                    INR {{ offer.currentPrice }}
+                    <div class="tag">15% OFF</div>
+                  </h3>
+                </div>
+                
+                <div class="flex flex-column mobile-reverse">
+                  <div class="button-group">
+                    <button class="primary-button" (click)="callPhone('9324105081')">
+                      Book Now
+                    </button>
+                    <button class="secondary-button m-ele" (click)="openWhatsApp('+919324105081')">
+                      Get Details
+                    </button>
+                  </div>
+                  
+                  <div class="features">
+                    <div class="feature-item" *ngFor="let feature of offer.features">
+                      <img [src]="feature.image" [alt]="feature.name" />
+                      <span>{{ feature.name }}</span>
+                    </div>
+                  </div>
+                  
+                  <div class="show-full-info">
+                    <div class="whatsapp link link-cursor" (click)="openWhatsApp('+919324105081')">
+                      <img src="/img/dinnercruise/whatsapp_icon.png" alt="WhatsApp icon" />
+                      Get more details
+                      <img src="./img/images/svg/arrow-ico.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>

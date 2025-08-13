@@ -1,0 +1,476 @@
+/* Main section styles */
+.section-padding {
+    padding: 60px 0;
+    background-color: #222222;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+  }
+  
+  /* Section headers */
+  .section-subtitle { 
+    color: #b8860b;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .section-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  /* Cruise container - Single column layout */
+  #cruise-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Main card styles */
+  .cruise-card {
+    background: #1b1b1b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #4a4a4a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 1120px; /* Total card width */
+    margin: 0 auto; /* Center the card */
+  }
+  
+  .cruise-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card {
+    background: transparent;
+    border: none;
+    padding: 20px;
+    height:345px;
+    margin: 0;
+  }
+  
+  /* Flex layout for card content */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-row-custom {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .g-1 {
+    gap: 0;
+  }
+  
+  /* Slider section */
+  .slider {
+    width: 460px; /* Image width */
+    height: 305px;
+    flex-shrink: 0;
+  }
+  
+  .cardImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cardImg:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Info section */
+  .info {
+    flex: 1;
+    padding: 20px 25px;
+    color: #ffffff;
+  }
+  
+  .info h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 10px 0 15px 0;
+    color: #ffffff;
+  }
+  
+  /* Rating styles */
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .rating strong {
+    color: #ffa500;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .rating svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  #star-full {
+    fill: #ffa500;
+  }
+  
+  /* Detail content */
+  .detail-content {
+    margin: 15px 0;
+  }
+  
+  .detail-content.d-ele {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .detail-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .detail-content li {
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .detail-content li:before {
+    content: "•";
+    color: #b8860b;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Show full info link */
+  .show-full-info {
+    margin-top: 15px;
+  }
+  
+  .link {
+    color: #b8860b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .link-cursor {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .link-cursor:hover {
+    color: #d4ac0d;
+  }
+  
+  .link-cursor img {
+    width: 12px;
+    height: 12px;
+    filter: brightness(0) saturate(100%) invert(69%) sepia(58%) saturate(1000%) hue-rotate(38deg) brightness(96%) contrast(86%);
+  }
+  
+  /* Payments section */
+  .payments {
+    width: 170px; /* Booking section width */
+    padding: 40px 25px;
+    background: #1b1b1b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .payments .info {
+    width: 370px; /* Text section width */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .payments::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 30px; /* Start after the gap */
+    bottom: 30px; /* End before the gap */
+    width: 1px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #4a4a4a,
+      #4a4a4a 5px,
+      transparent 5px,
+      transparent 10px
+    );
+  }
+  
+  /* Amount section */
+  .amount {
+    margin-bottom: 20px;
+  }
+  
+  .amount h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+  }
+  
+  /* Tag styles */
+  .tag {
+    background: #27ae60;
+    color: white;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  /* Mobile reverse for responsive design */
+  .mobile-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Button group */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Primary button */
+  .primary-button {
+    /* background: #b8860b; */
+    background-color: #AA8453;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .primary-button:hover {
+    background: #d4ac0d;
+  }
+  
+  /* Secondary button */
+  .secondary-button {
+    background: transparent;
+    color: #b8860b;
+    border: 1px solid #b8860b;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .secondary-button:hover {
+    background: #b8860b;
+    color: white;
+  }
+  
+  .m-ele {
+    /* Mobile element class */
+  }
+  
+  /* Features section */
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #cccccc;
+  }
+  
+  .feature-item img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(35%) saturate(456%) hue-rotate(8deg) brightness(93%) contrast(88%);
+  }
+  
+  .feature-item span {
+    font-weight: 500;
+  }
+  
+  /* WhatsApp section */
+  .whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #25d366;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .whatsapp img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .section-padding {
+      padding: 40px 0;
+    }
+    
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .flex-row-custom {
+      flex-direction: column;
+    }
+    
+    .slider {
+      width: 100%;
+      height: 200px;
+    }
+    
+    .info {
+      padding: 20px;
+    }
+    
+    .payments {
+      width: 100%;
+      border-left: none;
+      border-top: 1px solid #4a4a4a;
+    }
+    
+    .detail-content.d-ele {
+      max-height: 120px;
+      overflow: hidden;
+    }
+    
+    .show-full-info {
+      display: block;
+    }
+    
+    .features {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+    
+    .secondary-button.m-ele {
+      display: block;
+    }
+    
+    .whatsapp {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #cruise-container {
+      gap: 20px;
+    }
+    
+    .container {
+      padding: 0 15px;
+    }
+    
+    .info {
+      padding: 15px;
+    }
+    
+    .payments {
+      padding: 15px;
+    }
+    
+    .amount h3 {
+      font-size: 20px;
+    }
+    
+    .button-group {
+      gap: 8px;
+    }
+    
+    .primary-button,
+    .secondary-button {
+      padding: 10px 15px;
+      font-size: 13px;
+    }
+  }
+  
+  /* Additional utility classes */
+  .d-ele {
+    /* Display element class */
+  }
+  
+  /* Phone icon styles */
+  .phone-icon {
+    margin-right: 8px;
+  }
+  
+  /* Hide elements on mobile */
+  @media screen and (max-width: 767px) {
+    .footer-phone-icon {
+      display: none !important;
+    }
+  }
