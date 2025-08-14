@@ -1,55 +1,56 @@
 <section class="testimonials">
-    <div class="background bg-img bg-fixed section-padding pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <div class="testimonials-box">
-              <div class="head-box">
-                <h6>Testimonials</h6>
-                <h4>What Client's Say?</h4>
-                <div class="line"></div>
-              </div>
+  <div class="background section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="testimonials-box">
+            <div class="head-box">
+              <h6>TESTIMONIALS</h6>
+              <h4>What Client's Say?</h4>
+            </div>
+            
+            <swiper-container 
+              class="testimonials-swiper"
+              pagination="true"
+              pagination-clickable="true"
+              space-between="30"
+              slides-per-view="1"
+              loop="true"
+              autoplay-delay="5000"
+              autoplay-disable-on-interaction="false">
               
-              <swiper-container 
-                class="testimonials-swiper"
-                pagination="true"
-                pagination-clickable="true"
-                space-between="30"
-                slides-per-view="1"
-                loop="true"
-                autoplay-delay="5000"
-                autoplay-disable-on-interaction="false">
-                
-                <swiper-slide *ngFor="let testimonial of testimonials" class="testimonial-slide">
-                  <div class="item">
-                    <span class="quote">
-                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.25 25V15C16.25 11.25 13.75 8.75 10 8.75V6.25C15.25 6.25 18.75 9.75 18.75 15V16.25H20C21.25 16.25 22.5 17.5 22.5 18.75V25C22.5 26.25 21.25 27.5 20 27.5H18.75C17.5 27.5 16.25 26.25 16.25 25ZM3.75 25V15C3.75 11.25 1.25 8.75 -2.5 8.75V6.25C2.75 6.25 6.25 9.75 6.25 15V16.25H7.5C8.75 16.25 10 17.5 10 18.75V25C10 26.25 8.75 27.5 7.5 27.5H6.25C5 27.5 3.75 26.25 3.75 25Z" fill="currentColor"/>
-                      </svg>
-                    </span>
+              <swiper-slide *ngFor="let testimonial of testimonials" class="testimonial-slide">
+                <div class="item">
+                  <div class="quote-mark">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 15C20 6.716 13.284 0 5 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15zm25 0C45 6.716 38.284 0 30 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15z" fill="currentColor" opacity="0.3"/>
+                    </svg>
+                  </div>
+                  <div class="testimonial-content">
                     <p>{{ testimonial.quote }}</p>
-                    <div class="info">
-                      <div class="author-img">
-                        <img [src]="testimonial.image" [alt]="testimonial.name" />
-                      </div>
-                      <div class="cont">
-                        <span class="rating">
-                          <i 
-                            *ngFor="let star of generateStars(testimonial.rating)" 
-                            class="star-rating">
-                          </i>
-                        </span>
-                        <h6>{{ testimonial.name }}</h6>
-                        <span>{{ testimonial.title }}</span>
-                      </div>
+                    <div class="rating">
+                      <i 
+                        *ngFor="let star of generateStars(testimonial.rating)" 
+                        class="star-rating">
+                      </i>
                     </div>
                   </div>
-                </swiper-slide>
-                
-              </swiper-container>
-            </div>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img [src]="testimonial.image" [alt]="testimonial.name" />
+                    </div>
+                    <div class="cont">
+                      <h6>{{ testimonial.name }}</h6>
+                      <span>{{ testimonial.title }}</span>
+                    </div>
+                  </div>
+                </div>
+              </swiper-slide>
+              
+            </swiper-container>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
