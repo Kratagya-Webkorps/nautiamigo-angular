@@ -7,7 +7,7 @@
 
 /* ------------------------- Testimonials Section --------------------------- */
 .testimonials {
-    background-color: #101010;
+    background-color: #1B1B1B;  /* Updated background color */
     color: #ffffff;
     position: relative;
     padding-bottom: 0;      /* we use overlap, so no extra bottom padding */
@@ -29,7 +29,7 @@
     content: "";
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    background: rgba(0, 0, 0, 0.2);  /* dark overlay */
+    background: rgba(27, 27, 27, 0.9);  /* dark overlay */
     z-index: 1;
   }
   
@@ -84,7 +84,7 @@
   /* ---------------------- Booking Form Box ----------------------- */
   .booking-box {
     margin-top: 20px;
-    background-color: #181818;
+    background-color: #1B1B1B;  /* Updated background color */
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -131,7 +131,7 @@
     height: 48px;
     padding: 0 12px;
     background-color: #2a2a2a;
-    border: none;
+    border: 1px solid #3a3a3a;  /* Added subtle border for better visibility */
     border-radius: 2px;
     font-size: 1rem;
     color: #ffffff;
