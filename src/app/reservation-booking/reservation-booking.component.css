@@ -12,12 +12,17 @@
     position: relative;
     padding-bottom: 0;      /* we use overlap, so no extra bottom padding */
     z-index: 2;
+    min-height: 640px;      /* Set minimum height for black portion */
+    display: flex;
+    align-items: center;
   }
   
   .background {
     background-size: cover;
     background-position: center;
     position: relative;
+    width: 100%;
+    min-height: 640px;  /* Match the parent height */
   }
   
   .background::before {
@@ -38,6 +43,9 @@
     font-size: 1.2rem;
     color: #C39C5D;
     margin-right: 4px;
+  }
+  .box{
+    margin-top: 20px;
   }
   
   /* Reservation info */
@@ -75,6 +83,7 @@
   
   /* ---------------------- Booking Form Box ----------------------- */
   .booking-box {
+    margin-top: 20px;
     background-color: #181818;
     padding: 30px;
     border-radius: 4px;
@@ -179,19 +188,24 @@
   /* --------------------------- Clients Carousel ------------------------- */
   .clients {
     background-color: #ffffff;
+    padding: 0;  /* Remove padding to control height precisely */
     position: relative;
     z-index: 1;
-    margin-top: -36px;      /* maintain seamless overlap */
+    height: 150px;  /* Fixed height for white portion */
+    display: flex;
+    align-items: center;
+    margin: 0;  /* Reset any margins */
   }
   
   /* Positioning & gutters for the swiper viewport */
   .clients-swiper {
     padding-left: 35px;     /* exact left inset */
     padding-right: 44px;    /* exact right inset */
-    margin-top: 50px;       /* space from top of white area */
-    margin-bottom: 40px;    /* space below carousel */
+    margin: 0;              /* Reset margins */
     width: 100%;
-    overflow: hidden;
+    height: 100%;          /* Take full height of parent */
+    display: flex;
+    align-items: center;   /* Center vertically */
   }
   
   /* Each slide holds one logo */
