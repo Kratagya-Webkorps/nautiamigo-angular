@@ -1,5 +1,6 @@
 /* Additional Services Section Styles */
 .facilties {
+  font-size: 0.1em;
   background-color: #1a1a1a;
   color: #ffffff;
   position: relative;
@@ -92,7 +93,7 @@
 
 /* Icons */
 .single-facility > span {
-  font-size: 64px;
+  font-size: 50px;
   color: #c9a961;
   margin-bottom: 30px;
   display: block;
@@ -236,4 +237,17 @@
   .section-subtitle {
     font-size: 12px;
   }
+}
+
+
+.single-facility.family-events > span {
+  margin-left: 10px; 
+}
+
+.single-facility.seminars > span {
+  margin-left: 10px; 
+}
+
+.single-facility.conferences > span {
+  margin-left: 10px; 
 }

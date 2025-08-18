@@ -7,6 +7,7 @@ interface Service {
   description: string;
   icon: string;
   animationDelay: number;
+  customClass?: string;
 }
 
 @Component({
@@ -31,14 +32,16 @@ export class AdditionalServicesComponent implements OnInit {
       title: 'CONFERENCES',
       description: 'Complimentry drinks are included in the offerings.',
       icon: 'fas fa-glass-cheers',
-      animationDelay: 200
+      animationDelay: 200,
+      customClass:"conferences"
     },
     {
       id: 3,
       title: 'SEMINARS',
       description: 'A perfect place for your seminars and workshops.',
       icon: 'fas fa-chalkboard-teacher',
-      animationDelay: 400
+      animationDelay: 400,
+      customClass: 'seminars'
     },
     {
       id: 4,
@@ -59,7 +62,8 @@ export class AdditionalServicesComponent implements OnInit {
       title: 'FAMILY EVENTS',
       description: 'Perfect setting for family gatherings and events.',
       icon: 'fas fa-users',
-      animationDelay: 400
+      animationDelay: 400,
+      customClass: 'family-events'
     }
   ];
 
