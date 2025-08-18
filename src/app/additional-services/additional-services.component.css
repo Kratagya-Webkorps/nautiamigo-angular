@@ -122,7 +122,7 @@
 }
 
 /* Background Shape */
-.facility-shape {
+/* .facility-shape {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,7 +130,7 @@
   opacity: 0.03;
   z-index: 1;
   transition: all 0.4s ease-in-out;
-}
+} */
 
 .facility-shape span {
   font-size: 180px;
