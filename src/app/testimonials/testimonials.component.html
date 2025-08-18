@@ -1,56 +1,132 @@
 <section class="testimonials">
-  <div class="background section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div class="testimonials-box">
-            <div class="head-box">
-              <h6>TESTIMONIALS</h6>
-              <h4>What Client's Say?</h4>
+  <div class="container">
+    <h6>TESTIMONIALS</h6>
+    <h4>What Client's Say?</h4>
+
+    <swiper-container
+      class="testimonials-swiper"
+      pagination="true"
+      pagination-clickable="true"
+      space-between="30"
+      slides-per-view="1"
+      loop="true"
+      autoplay-delay="5000"
+      autoplay-disable-on-interaction="false"
+    >
+      <!-- First Testimonial Slide -->
+      <swiper-slide>
+        <div class="testimonial-slide">
+          <!-- Quote -->
+          <div class="quote-mark">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M20 15C20 6.716 13.284 0 5 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 
+              2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15zm25 0C45 6.716 38.284 0 30 0v5c4.418 0 
+              8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 
+              5-2.239 5-5V15z" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+
+          <!-- Testimonial Text -->
+          <div class="testimonial-content">
+            <p>
+              
+              Had a great experience....went with my family....better than other cruise as I have tried other one as well last year....they have Air conditioner Vip lounge as well, fun activities for kids, couples , dance, good food.....can surely try once if you want to have dinner cruise experience....crew is also very nice and helpful
+            </p>
+          </div>
+
+          <!-- Footer: Image + Details -->
+          <div class="testimonial-footer">
+            <!-- Left: Photo -->
+            <div class="author-img">
+              <img src="../../assets/img/team/4.jpg" alt="Charul Arora" />
             </div>
-            
-            <swiper-container 
-              class="testimonials-swiper"
-              pagination="true"
-              pagination-clickable="true"
-              space-between="30"
-              slides-per-view="1"
-              loop="true"
-              autoplay-delay="5000"
-              autoplay-disable-on-interaction="false">
-              
-              <swiper-slide *ngFor="let testimonial of testimonials" class="testimonial-slide">
-                <div class="item">
-                  <div class="quote-mark">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 15C20 6.716 13.284 0 5 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15zm25 0C45 6.716 38.284 0 30 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15z" fill="currentColor" opacity="0.3"/>
-                    </svg>
-                  </div>
-                  <div class="testimonial-content">
-                    <p>{{ testimonial.quote }}</p>
-                    <div class="rating">
-                      <i 
-                        *ngFor="let star of generateStars(testimonial.rating)" 
-                        class="star-rating">
-                      </i>
-                    </div>
-                  </div>
-                  <div class="author-info">
-                    <div class="author-img">
-                      <img [src]="testimonial.image" [alt]="testimonial.name" />
-                    </div>
-                    <div class="cont">
-                      <h6>{{ testimonial.name }}</h6>
-                      <span>{{ testimonial.title }}</span>
-                    </div>
-                  </div>
-                </div>
-              </swiper-slide>
-              
-            </swiper-container>
+            <!-- Right: Stars, Name, Review -->
+            <div class="author-details">
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+              <h6>Charul Arora</h6>
+              <span>Guest Review</span>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </swiper-slide>
+      <!-- Second Testimonial Slide -->
+      <swiper-slide>
+        <div class="testimonial-slide">
+          <!-- Quote -->
+          <div class="quote-mark">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M20 15C20 6.716 13.284 0 5 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 
+              2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15zm25 0C45 6.716 38.284 0 30 0v5c4.418 0 
+              8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 
+              5-2.239 5-5V15z" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+
+          <!-- Testimonial Text -->
+          <div class="testimonial-content">
+            <p>
+              
+              Great experience. Was there on the occasion of my wife’s bday and asked the hosts for a cake 10 mins before departure. Still the hosts especially Shelton was too helpful and got the same arranged. Thank you so much guys for making this happen.
+              Wonderful experience and had lots of fun. Definitely recommended.
+                                  
+            </p>
+          </div>
+
+          <!-- Footer: Image + Details -->
+          <div class="testimonial-footer">
+            <!-- Left: Photo -->
+            <div class="author-img">
+              <img src="../../assets/img/team/1.jpg" alt="Sarvesh Kumar Rai" />
+            </div>
+            <!-- Right: Stars, Name, Review -->
+            <div class="author-details">
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+              <h6>Sarvesh Kumar Rai</h6>
+              <span>Guest Review</span>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- Third Testimonial Slide -->
+      <swiper-slide>
+        <div class="testimonial-slide">
+          <!-- Quote -->
+          <div class="quote-mark">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M20 15C20 6.716 13.284 0 5 0v5c4.418 0 8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 
+              2.761 2.239 5 5 5h5c2.761 0 5-2.239 5-5V15zm25 0C45 6.716 38.284 0 30 0v5c4.418 0 
+              8 3.582 8 8v2h-3c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h5c2.761 0 
+              5-2.239 5-5V15z" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+
+          <!-- Testimonial Text -->
+          <div class="testimonial-content">
+            <p>
+              
+              Had an amazing time at nauti Amigo cruise, The vip lounge was fantastic, and the food was spot on. Big thanks to the team for  their support. Truly a memorable experience
+              Highly recommend.
+                                  
+            </p>
+          </div>
+
+          <!-- Footer: Image + Details -->
+          <div class="testimonial-footer">
+            <!-- Left: Photo -->
+            <div class="author-img">
+              <img src="../../assets/img/team/5.jpg" alt="Dolly Bajaj" />
+            </div>
+            <!-- Right: Stars, Name, Review -->
+            <div class="author-details">
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+              <h6>Dolly Bajaj</h6>
+              <span>Guest Review</span>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+
+      
+    </swiper-container>
   </div>
 </section>
