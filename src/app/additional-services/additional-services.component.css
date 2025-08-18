@@ -115,11 +115,13 @@
 
 /* Service Description */
 .single-facility p {
-  color: #b8b8b8;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  line-height: 26.3px;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.5); /* #ffffff80 in RGBA */
   margin-bottom: 15px;
-  font-weight: 300;
+  font-weight: 400; /* Regular weight for Barlow */
   flex-grow: 1;
 }
 
