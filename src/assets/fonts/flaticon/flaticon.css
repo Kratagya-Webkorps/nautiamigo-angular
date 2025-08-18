@@ -1,0 +1,30 @@
+/* Flaticon CSS */
+@font-face {
+  font-family: 'Flaticon';
+  src: url('Flaticon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  src:url(../../../assets/fonts/flaticon/Flaticon.woff),format('woff')
+  url(../../../assets/fonts/flaticon/Flaticon.woff2),format('woff2');
+
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-world:before { content: "\f100"; }
+.flaticon-car:before { content: "\f101"; }
+.flaticon-bed:before { content: "\f102"; }
+.flaticon-swimming:before { content: "\f103"; }
+.flaticon-wifi:before { content: "\f104"; }
+.flaticon-breakfast:before { content: "\f105"; }

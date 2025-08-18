@@ -23,43 +23,43 @@ export class AdditionalServicesComponent implements OnInit {
       id: 1,
       title: 'MEETINGS',
       description: 'Pickup and Drop available from North Goa specific locations.',
-      icon: 'flaticon-world',
+      icon: 'fas fa-globe',
       animationDelay: 0
     },
     {
       id: 2,
       title: 'CONFERENCES',
       description: 'Complimentry drinks are included in the offerings.',
-      icon: 'flaticon-car',
+      icon: 'fas fa-glass-cheers',
       animationDelay: 200
     },
     {
       id: 3,
       title: 'SEMINARS',
-      description: 'Ride will be safe and secure for all the biddies joining.',
-      icon: 'flaticon-bed',
+      description: 'A perfect place for your seminars and workshops.',
+      icon: 'fas fa-chalkboard-teacher',
       animationDelay: 400
     },
     {
       id: 4,
-      title: 'FILM SHOOTS',
-      description: 'Celebrate Your Last Night of Singledom on a Bachelorette Party Boat in Goa.',
-      icon: 'flaticon-swimming',
-      animationDelay: 600
+      title: 'FILM SHOOT',
+      description: 'Ideal location for film and photo shoots.',
+      icon: 'fas fa-video',
+      animationDelay: 0
     },
     {
       id: 5,
       title: 'BIRTHDAYS',
-      description: 'Renewing your vows? Celebrating a lifetime of love with your husband or wife.',
-      icon: 'flaticon-wifi',
-      animationDelay: 800
+      description: 'Celebrate your special day with us.',
+      icon: 'fas fa-birthday-cake',
+      animationDelay: 200
     },
     {
       id: 6,
       title: 'FAMILY EVENTS',
-      description: 'Makes sense that you\'d want to throw a big party for your loved one when it\'s their turn to move on.',
-      icon: 'flaticon-breakfast',
-      animationDelay: 1000
+      description: 'Perfect setting for family gatherings and events.',
+      icon: 'fas fa-users',
+      animationDelay: 400
     }
   ];
 
