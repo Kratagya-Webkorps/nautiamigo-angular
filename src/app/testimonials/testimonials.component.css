@@ -1,7 +1,14 @@
 .testimonials {
   text-align: center; /* center headings + quote */
-  margin: 40px auto;
+  margin: 0 auto;
   max-width: 800px;
+  min-height: 610px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .testimonial-content {
