@@ -242,4 +242,19 @@
   .clients-swiper::part(pagination) {
     display: none;
   }
+
+  .text-content {
+    position: absolute;   
+    top: 200px;           
+    left: 105px;          
+    width: 446px; 
+  
+  font-family: 'Gilda Display', serif;  /* Gilda Display Regular */
+  font-size: 24px;                      /* Font size */
+  line-height: 30px;                    /* Font height (line spacing) */
+  letter-spacing: 0px;                  /* Line spacing = character spacing */
+  color: #ffffff;            
+    
+  }
+    
   
