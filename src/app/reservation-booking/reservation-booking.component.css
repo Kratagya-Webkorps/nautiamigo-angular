@@ -82,16 +82,16 @@
   
   /* ---------------------- Booking Form Box ----------------------- */
   .booking-box {
-    margin-top: 20px;
-    background-color: #1B1B1B;  /* Updated background color */
+    /* remove margin-top/transform/relative that were used earlier */
+    background-color: #1B1B1B;
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    
-    /* pull down into white section by 36px */
-    position: relative;
-    transform: translateY(36px);
-    z-index: 3;
+  
+    position: static;   /* or just omit position entirely */
+    transform: none;
+    margin-top: 0;
+    width: 100%;        /* fill the 515px wrapper nicely */
   }
   
   /* Headings */
@@ -279,10 +279,43 @@
     left: 110px;    
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 2px;
     font-size: 16px;
     color: #fff;
   }
 
+  
+  .booking-form {
+    position: absolute;
+    top: 160px;      
+    left: 755px;    
+    width: 425px;    
+    z-index: 4;      
+    box-sizing: border-box; 
+  }
+  .booking-form .head-box h6 {
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-size: 15px;         
+    line-height: 18.8px;      
+    letter-spacing: 6px;      
+    text-transform: uppercase;
+    font-weight: 400;         
+    color: #AA8453;           
+    margin-bottom: 6px;
+    text-align: left;
+  }
+  
+  
+  .booking-form .head-box h4 {
+    font-family: 'Gilda Display', serif; 
+    font-size: 27px;        
+    line-height: 33.8px;    
+    letter-spacing: 0px;    
+    font-weight: 400;       
+    color: #ffffff;         
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
   
   
