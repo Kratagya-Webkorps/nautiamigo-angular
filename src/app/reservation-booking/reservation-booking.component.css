@@ -12,9 +12,11 @@
     position: relative;
     padding-bottom: 0;      /* we use overlap, so no extra bottom padding */
     z-index: 2;
-    min-height: 640px;      /* Set minimum height for black portion */
+    min-height: 640px;
+    height: 640px;           /* Set fixed height */
     display: flex;
     align-items: center;
+    box-sizing: border-box;  /* Include padding in height calculation */
   }
   
   .background {
@@ -22,7 +24,8 @@
     background-position: center;
     position: relative;
     width: 100%;
-    min-height: 640px;  /* Match the parent height */
+    min-height: 640px;
+    height: 640px;      /* Set fixed height to match parent */
   }
   
   .background::before {
