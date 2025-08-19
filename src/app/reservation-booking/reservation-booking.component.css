@@ -52,11 +52,7 @@
   }
   
   /* Reservation info */
-  .reservations {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
+  
   
   .reservations .icon {
     font-size: 1.8rem;
@@ -249,12 +245,32 @@
     left: 105px;          
     width: 446px; 
   
-  font-family: 'Gilda Display', serif;  /* Gilda Display Regular */
-  font-size: 24px;                      /* Font size */
-  line-height: 30px;                    /* Font height (line spacing) */
-  letter-spacing: 0px;                  /* Line spacing = character spacing */
+  font-family: 'Gilda Display', serif;  
+  font-size: 24px;                      
+  line-height: 30px;                    
+  letter-spacing: 0px;                  
   color: #ffffff;            
     
+  }
+
+  .hero-stars {
+    position: absolute;
+    top: 150px;     
+    left: 105px;    
+    z-index: 3;     
+    line-height: 1;
+    letter-spacing: 4px;   
+    font-size: 20px;       
+    color: #C39C5D;        
+    pointer-events: none;  
+  }
+  .reservations {
+    display: flex;
+    position: absolute;
+    top:470px;
+    left:103px;
+    align-items: center;
+    margin-bottom: 15px;
   }
     
   
