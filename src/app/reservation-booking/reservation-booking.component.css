@@ -272,5 +272,17 @@
     align-items: center;
     margin-bottom: 15px;
   }
-    
+
+  .call {
+    position: absolute;
+    top: 550px;     
+    left: 110px;    
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  
   
