@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
   }
   
   .col-md-6 {
@@ -146,6 +146,17 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     object-fit: cover;
+    position: relative;
+  }
+  
+  /* Position left image (8.jpeg) 200px from top */
+  .col-md-3:has(img[src*="8.jpeg"]) {
+    margin-top: 0px;
+  }
+  
+  /* Position right image (2.jpeg) 115px from top */
+  .col-md-3:has(img[src*="2.jpeg"]) {
+    margin-top: -100px;
   }
   
   .col img:hover {
@@ -298,5 +309,5 @@
     top: 500px;   
     left: -25px;  
   }
-
+  
   
