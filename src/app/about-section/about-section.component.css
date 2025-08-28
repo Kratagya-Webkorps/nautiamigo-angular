@@ -142,7 +142,7 @@
   .col img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 0;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     object-fit: cover;
