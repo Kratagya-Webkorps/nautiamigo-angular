@@ -289,3 +289,9 @@
     line-height: 1.6;
     color: #ffffff; 
   }
+
+  .res {
+    position: absolute;
+    top: 500px;   /* distance from top */
+    left: -25px;  /* distance from left */
+  }
