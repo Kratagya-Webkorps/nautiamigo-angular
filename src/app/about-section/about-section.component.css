@@ -1,4 +1,4 @@
-/* About Section Component Styles */
+
 .about {
     background: #222222;
     background: rgb(34, 34, 34);
@@ -9,16 +9,6 @@
     align-items: center;
   }
   
-  .about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
   
   .section-padding {
     padding: 120px 0;
@@ -49,7 +39,7 @@
     max-width: calc(25% - 22.5px);
   }
   
-  /* Star Rating */
+  
   .star-rating {
     font-style: normal;
     color: #D79F4F;
@@ -61,10 +51,7 @@
     content: '★';
   }
   
-  /* span {
-    display: block;
-    margin-bottom: 20px;
-  } */
+  
   .star-wrapper {
     display: flex;
     justify-content: start; 
@@ -73,7 +60,7 @@
     margin-bottom: 20px;
   }
   
-  /* Typography */
+ 
   .section-subtitle {
     font-family: 'Barlow Condensed', sans-serif;
     color: #d4af37;
@@ -106,7 +93,7 @@
     text-align: justify;
   }
   
-  /* Reservations Section */
+  
   .reservations {
     display: flex;
     align-items: center;
@@ -120,22 +107,6 @@
     transform: none;      
   }
   
-  /* .reservations:hover {
-    background: rgba(212, 175, 55, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
-  }
-  
-  .reservations .icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #d4af37, #f4d03f);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  } */
   
   .reservations .icon .flaticon-call::before {
     content: '📞';
@@ -163,7 +134,7 @@
     color: #d4af37;
   }
   
-  /* Images */
+
   .col img {
     width: 100%;
     height: auto;
@@ -186,7 +157,6 @@
     margin-bottom: 30px;
   }
   
-  /* Animation Classes */
   .animate-box {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
@@ -215,7 +185,7 @@
     }
   }
   
-  /* Responsive Design */
+
   @media (max-width: 1200px) {
     .container {
       max-width: 960px;
@@ -301,14 +271,11 @@
     }
   }
   
-  /* Additional Styling for Better Visual Appeal */
   .about {
     background-attachment: fixed;
   }
-
-  /* Custom golden-brown highlight */
 .cruise-highlight {
-    color: #A58051; /* or use rgb(165, 128, 81); */
+    color: #A58051; 
   }
   
   .phone-highlight {
