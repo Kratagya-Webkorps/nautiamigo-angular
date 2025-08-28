@@ -97,7 +97,7 @@
   
   .reservations {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
     margin-top: 20px;
     padding: 0;           
@@ -114,23 +114,16 @@
     font-size: 1.7em;
   }
   
-  /* .reservations .text p {
-    color: #d4af37;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  } */
+  
   .reservations .text p {
-    font-family: 'Barlow', sans-serif;  /* Barlow Regular */
-    font-size: 15px;                    /* font size */
-    line-height: 26.3px;                /* line height */
-    letter-spacing: 0px;                /* no extra spacing */
-    color: #ffffff80;                   /* semi-transparent white */
-    font-weight: 400;                   /* Regular weight */
-    margin-bottom: 5px;                 /* keep spacing below if needed */
-    text-transform: none;               /* remove uppercase if you don’t want it */
+    font-family: 'Barlow', sans-serif; 
+    font-size: 15px;                    
+    line-height: 26.3px;                
+    letter-spacing: 0px;                
+    color: #ffffff80;                   
+    font-weight: 400;                   
+    margin-bottom: 5px;                 
+    text-transform: none;               
   }
   
   .reservations .text a {
@@ -249,11 +242,11 @@
       font-size: 32px;
     }
     
-    .reservations {
+    /* .reservations {
       flex-direction: column;
-      text-align: center;
       gap: 15px;
-    }
+      align-items: stretch;
+    } */
     
     .row {
       gap: 20px;
@@ -302,6 +295,8 @@
 
   .res {
     position: absolute;
-    top: 500px;   /* distance from top */
-    left: -25px;  /* distance from left */
+    top: 500px;   
+    left: -25px;  
   }
+
+  
