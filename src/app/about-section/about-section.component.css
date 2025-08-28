@@ -114,13 +114,23 @@
     font-size: 1.7em;
   }
   
-  .reservations .text p {
+  /* .reservations .text p {
     color: #d4af37;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
+  } */
+  .reservations .text p {
+    font-family: 'Barlow', sans-serif;  /* Barlow Regular */
+    font-size: 15px;                    /* font size */
+    line-height: 26.3px;                /* line height */
+    letter-spacing: 0px;                /* no extra spacing */
+    color: #ffffff80;                   /* semi-transparent white */
+    font-weight: 400;                   /* Regular weight */
+    margin-bottom: 5px;                 /* keep spacing below if needed */
+    text-transform: none;               /* remove uppercase if you don’t want it */
   }
   
   .reservations .text a {
