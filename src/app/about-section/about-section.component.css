@@ -4,7 +4,8 @@
     background: rgb(34, 34, 34);
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    height: 775px;       
+    min-height: unset;
     display: flex;
     align-items: center;
   }
