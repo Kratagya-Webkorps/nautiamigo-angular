@@ -5,6 +5,6 @@ import { AppComponent } from './app/app.component';
 bootstrapApplication(AppComponent, {
   providers: [
     provideAnimations(),
-    // your other providers...
+    
   ]
 }).catch(err => console.error(err));

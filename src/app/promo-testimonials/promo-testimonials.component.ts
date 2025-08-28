@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-// Import Swiper core and required modules
 import { Swiper } from 'swiper';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-// Initialize Swiper modules
 Swiper.use([Autoplay, Pagination, Navigation]);
 
 @Component({
@@ -42,6 +40,5 @@ export class PromoTestimonialsComponent {
     }
   ];
 
-  // simple stars array for template *ngFor
   stars = new Array(5);
 }

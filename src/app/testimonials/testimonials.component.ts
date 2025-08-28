@@ -54,7 +54,7 @@ export class TestimonialsComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    // Component initialization
+   
   }
 
   generateStars(rating: number): number[] {
