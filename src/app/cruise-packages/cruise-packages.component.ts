@@ -130,8 +130,8 @@ export class CruisePackagesComponent implements OnInit {
           name: "Panjim Goa, India",
           image: "../../assets/img/images/svg/bolt-ico.svg",
         },
-        { name: "Meals & Drinks", image: "./img/images/svg/mobile-ico.svg" },
-        { name: "Transport", image: "./img/images/svg/transfer-ico.svg" },
+        { name: "Meals & Drinks", image: "../../assets/img/images/svg/mobile-ico.svg" },
+        { name: "Transport", image: "../../assets/img/images/svg/transfer-ico.svg" },
       ],
       highlights: [
         {

@@ -4,7 +4,8 @@
       <div class="section-title">Our Packages</div>
       <div id="cruise-container">
         
-        <div class="cruise-card" *ngFor="let offer of offers">
+        <!-- <div class="cruise-card" *ngFor="let offer of offers"> -->
+          <div class="cruise-card" *ngFor="let offer of offers; let i = index">
           <div class="card">
             <div class="flex flex-row-custom g-1">
               
@@ -57,7 +58,7 @@
               </div>
   
               <!-- Payments Section -->
-              <div class="payments">
+              <div class="payments" [ngClass]="{ 'top-three': (i < 3) && !isLakhs(offer) }">
                 <div class="amount" [ngClass]="{ 'is-lakhs': isLakhs(offer) }">
                   <h3>
                     <span class="currency">INR</span> <span class="price">{{ offer.currentPrice }}</span>
