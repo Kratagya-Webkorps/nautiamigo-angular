@@ -58,7 +58,7 @@
   
               <!-- Payments Section -->
               <div class="payments">
-                <div class="amount">
+                <div class="amount" [ngClass]="{ 'is-lakhs': isLakhs(offer) }">
                   <h3>
                     <span class="currency">INR</span> <span class="price">{{ offer.currentPrice }}</span>
                     <span class="tag">15% OFF</span>

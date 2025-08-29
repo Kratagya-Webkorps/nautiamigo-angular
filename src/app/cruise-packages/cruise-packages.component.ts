@@ -62,6 +62,8 @@ interface CruiseOffer {
   thingsToCarry: ThingToCarry[];
   needToKnows: NeedToKnow[];
   transport: Transport[];
+  isLakhs?: (offer: CruiseOffer) => boolean; 
+  
 }
 
 
@@ -457,7 +459,6 @@ export class CruisePackagesComponent implements OnInit {
       ],
     },
     {
-  
       cruiseId: 1,
       title: "Private Yachts in Goa",
       category: "Private Yachts",
@@ -589,6 +590,10 @@ export class CruisePackagesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  isLakhs(offer: CruiseOffer): boolean {
+    return /lakhs/i.test(offer.currentPrice); 
+    
   }
 
   goToService(routingUrl: string): void {

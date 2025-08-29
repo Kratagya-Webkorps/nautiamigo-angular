@@ -579,3 +579,44 @@
   white-space: nowrap; 
   border-radius: 0px;    
 }
+
+/* Only the card marked .is-lakhs will use these rules */
+.amount.is-lakhs h3 {
+  flex-wrap: wrap;          /* allow items to move to the next line */
+  align-items: flex-start;
+}
+
+/* Push the price to its own line under INR */
+.amount.is-lakhs .price {
+  flex-basis: 100%;         /* forces a line break after INR */
+}
+
+/* OPTIONAL: put the green tag on a separate line under the price */
+.amount.is-lakhs .tag {
+  order: 3;
+  margin-top: 6px;
+}
+
+.amount h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.amount.is-lakhs h3 {
+  flex-wrap: wrap; /* allow wrapping only for lakhs */
+}
+
+.amount.is-lakhs .currency,
+.amount.is-lakhs .price {
+  order: 1;
+  flex: 0 0 auto; /* stick together on the first line */
+}
+
+.amount.is-lakhs .tag {
+  order: 2;
+  flex-basis: 40%; /* force it to a new line */
+  margin-top: 6px;
+  
+}
