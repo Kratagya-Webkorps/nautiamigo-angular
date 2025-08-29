@@ -63,7 +63,7 @@
     background: transparent;
     border: none;
     padding: 20px;
-    height:345px;
+    height: 370px;
     margin: 0;
   }
   
@@ -88,7 +88,7 @@
   /* Slider section */
   .slider {
     width: 460px; /* Image width */
-    height: 305px;
+    height: 315px;
     flex-shrink: 0;
   }
   

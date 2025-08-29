@@ -212,7 +212,7 @@ export class CruisePackagesComponent implements OnInit {
       booked: "4M+",
       buttonText: "Book this activity & get 20% off",
       currentPrice: "1999",
-      image: "/img/dinnercruise/DC20.jpeg",
+      image: "./../assets/img/dinnercruise/DC20.jpeg",
       topFeatures: [
         {
           icon: "event_available",
@@ -339,7 +339,7 @@ export class CruisePackagesComponent implements OnInit {
       booked: "4M+",
       buttonText: "Book this activity & get 20% off",
       currentPrice: "499",
-      image: "/img/dinnercruise/DC24.jpeg",
+      image: "./../assets/img/dinnercruise/DC24.jpeg",
       topFeatures: [
         {
           icon: "event_available",
