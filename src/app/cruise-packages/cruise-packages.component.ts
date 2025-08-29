@@ -64,6 +64,8 @@ interface CruiseOffer {
   transport: Transport[];
 }
 
+
+
 @Component({
   selector: 'app-cruise-packages',
   standalone: true,
@@ -455,6 +457,7 @@ export class CruisePackagesComponent implements OnInit {
       ],
     },
     {
+  
       cruiseId: 1,
       title: "Private Yachts in Goa",
       category: "Private Yachts",

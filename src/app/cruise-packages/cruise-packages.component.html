@@ -60,8 +60,8 @@
               <div class="payments">
                 <div class="amount">
                   <h3>
-                    INR {{ offer.currentPrice }}
-                    <div class="tag">15% OFF</div>
+                    <span class="currency">INR</span> <span class="price">{{ offer.currentPrice }}</span>
+                    <span class="tag">15% OFF</span>
                   </h3>
                 </div>
                 
@@ -70,9 +70,9 @@
                     <button class="primary-button" (click)="callPhone('9324105081')">
                       Book Now
                     </button>
-                    <button class="secondary-button m-ele" (click)="openWhatsApp('+919324105081')">
+                    <!-- <button class="secondary-button m-ele" (click)="openWhatsApp('+919324105081')">
                       Get Details
-                    </button>
+                    </button> -->
                   </div>
                   
                   <div class="features">

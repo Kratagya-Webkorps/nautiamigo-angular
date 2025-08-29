@@ -541,7 +541,41 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26.3px;
-  letter-spacing: 0px;  /* line spacing */
-  color: #ffffff;       /* white */
-  text-decoration: none; /* removes underline, optional */
+  letter-spacing: 0px;  
+  color: #ffffff;      
+  text-decoration: none; 
+}
+
+.amount h3 {
+  display: flex;
+  align-items: center; 
+  gap: -50px;             
+}
+
+.amount h3 .tag {
+  font-size: 14px;   
+  font-weight: 600 
+}
+
+
+
+
+.amount h3 .currency,
+.amount h3 .price {
+  display: inline;  
+  font-family: "Gilda Display", serif;  
+  font-size: 20px;
+  line-height: 25px;  
+  letter-spacing: 0px; 
+  color: #ffffff;     
+}
+
+.amount h3 .tag {
+  background-color: #3f8a43; 
+  color: #fff;              
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;       
+  white-space: nowrap; 
+  border-radius: 0px;    
 }
