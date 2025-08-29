@@ -344,7 +344,7 @@
 
 .custom-line {
   position: absolute;
-  top: 235px;       
+  top: 250px;       
   left: 1035px;     
   width: 360px;     
   height: 2px;      
@@ -417,3 +417,37 @@
   font-weight: 400;                            
   text-transform: uppercase;                   
 }
+
+.reservations .text a {
+  font-family: 'Barlow', sans-serif !important;  
+  font-size: 24px !important;                    
+  line-height: 26.3px !important;                
+  letter-spacing: -1px !important;               
+  color: #ffffff !important;                     
+  font-weight: 400;                              
+  text-decoration: none;                         
+  display: inline-block;                         
+}
+
+
+
+
+
+input[type=date]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+
