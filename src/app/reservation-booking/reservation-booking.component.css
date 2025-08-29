@@ -79,7 +79,6 @@
     padding: 30px;
     border-radius: 4px;
     min-height: 450px;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
   
     position: static;   
     transform: none;
@@ -326,58 +325,95 @@
 }
   
   
-/* Make all inputs, selects, and date pickers 60px tall */
 .input10_inner input,
 .select1_inner select,
 .booking-inner input[type="date"] {
   height: 60px !important;
-  line-height: 60px;  /* aligns text vertically */
-  padding: 0 15px;    /* balanced padding */
+  line-height: 60px;  
+  padding: 0 15px;    
 }
 
-/* Make the button also 60px tall */
 .btn-form1-submit {
   height: 60px !important;
-  line-height: 60px;  /* centers text inside */
+  line-height: 60px;    
 }
 
 .booking-form .head-box {
-  padding-left: 25px;   /* moves both lines right */
+  padding-left: 25px;   
 }
 
 .custom-line {
   position: absolute;
-  top: 235px;       /* distance from top */
-  left: 1035px;     /* distance from left */
-  width: 360px;     /* line width */
-  height: 2px;      /* thickness */
-  background-color: #2b2b2b; /* white line */
-  z-index: 5;       /* keep it above background */
+  top: 235px;       
+  left: 1035px;     
+  width: 360px;     
+  height: 2px;      
+  background-color: #2b2b2b; 
+  z-index: 5;       
 }
 
-/* Style dropdowns */
 .select1_inner select {
   appearance: none;          
   -webkit-appearance: none;  
   -moz-appearance: none;   
      
-  border: 1px solid #ccc;    /* your border */
-  padding-right: 30px;       /* space for custom arrow */
+  border: 1px solid #ccc;    
+  padding-right: 30px;       
   position: relative;
 }
-
-/* Custom dropdown arrow */
 .select1_inner {
   position: relative;
 }
 
 .select1_inner::after {
-  content: "▼";              /* arrow symbol */
+  content: "▼";              
   font-size: 14px;
-  color: #aa8453;            /* your gold color */
+  color: #aa8453;            
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;      /* arrow won’t block clicks */
+  pointer-events: none;      
+}
+
+.reservations .text p,.reservations .text a {
+  font-family: 'Barlow', sans-serif;   
+  font-size: 15px;                     
+  line-height: 26.3px;                 
+  letter-spacing: 0px;                 
+  color: #ffffff;                      
+  font-weight: 400;                    
+  margin: 0;                           
+}
+
+.reservations .text span {
+  font-family: 'Barlow', sans-serif;   
+  font-size: 13px;
+  line-height: 26.3px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400; 
+  display: block;    
+}
+
+.testimonials .call small {
+  font-family: 'Barlow', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 26.3px !important;                
+  letter-spacing: 0 !important;                  
+  color: #ffffff !important;                     
+  font-weight: 400 !important;                   
+  display: inline-block;                         
+  vertical-align: middle;                        
+  margin-left: 6px;                              
+}
+
+.btn-form1-submit {
+  font-family: 'Barlow Condensed', sans-serif; 
+  font-size: 15px !important;                  
+  line-height: 62px !important;                
+  letter-spacing: 3px !important;              
+  color: #ffffff !important;                   
+  font-weight: 400;                            
+  text-transform: uppercase;                   
 }
