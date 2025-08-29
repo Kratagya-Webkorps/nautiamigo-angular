@@ -78,7 +78,8 @@
     background-color: #1B1B1B;
     padding: 30px;
     border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    min-height: 450px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
   
     position: static;   
     transform: none;
@@ -152,8 +153,9 @@
   
   .booking-inner input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
-    right: 12px;
-    color: #C39C5D;
+    right: 40px;
+    filter: invert(42%) sepia(27%) saturate(623%) hue-rotate(6deg) brightness(95%) contrast(95%);
+    
     opacity: 1;
   }
   
@@ -309,5 +311,73 @@
     text-align: left;
   }
   
+
+.reservations .icon,
+.reservations .text p,
+.reservations .text a,
+.call {
+  color: #ffffff !important;
+}
+
+.input10_inner input,
+.select1_inner select,
+.booking-inner input[type="date"] {
+  border: none !important;
+}
   
   
+/* Make all inputs, selects, and date pickers 60px tall */
+.input10_inner input,
+.select1_inner select,
+.booking-inner input[type="date"] {
+  height: 60px !important;
+  line-height: 60px;  /* aligns text vertically */
+  padding: 0 15px;    /* balanced padding */
+}
+
+/* Make the button also 60px tall */
+.btn-form1-submit {
+  height: 60px !important;
+  line-height: 60px;  /* centers text inside */
+}
+
+.booking-form .head-box {
+  padding-left: 25px;   /* moves both lines right */
+}
+
+.custom-line {
+  position: absolute;
+  top: 235px;       /* distance from top */
+  left: 1035px;     /* distance from left */
+  width: 360px;     /* line width */
+  height: 2px;      /* thickness */
+  background-color: #2b2b2b; /* white line */
+  z-index: 5;       /* keep it above background */
+}
+
+/* Style dropdowns */
+.select1_inner select {
+  appearance: none;          
+  -webkit-appearance: none;  
+  -moz-appearance: none;   
+     
+  border: 1px solid #ccc;    /* your border */
+  padding-right: 30px;       /* space for custom arrow */
+  position: relative;
+}
+
+/* Custom dropdown arrow */
+.select1_inner {
+  position: relative;
+}
+
+.select1_inner::after {
+  content: "▼";              /* arrow symbol */
+  font-size: 14px;
+  color: #aa8453;            /* your gold color */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;      /* arrow won’t block clicks */
+}
