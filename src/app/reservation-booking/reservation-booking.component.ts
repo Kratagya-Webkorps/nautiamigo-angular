@@ -12,41 +12,26 @@ import { register } from 'swiper/element/bundle';
 })
 export class ReservationBookingComponent implements OnInit {
 
-  today: string = '';  // <-- will hold today’s date in yyyy-mm-dd format
-  selectedDate: string = '';  // <-- Added to store the selected date from the date picker
+  today: string = '';
+  selectedDate: string = '';
 
-  // Method to show the date picker when the input is focused
-  showDatePicker(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if ('showPicker' in HTMLInputElement.prototype) {
-      input.showPicker();
-    }
-  }
+  // 🔹 NEW: control the input type dynamically
+  dateInputType: string = 'text';
 
   ngOnInit() {
     register();
-
-    // Set today's date in yyyy-mm-dd
     this.today = new Date().toISOString().split('T')[0];
-    
-    // Setup date input handling after view is initialized
-    this.setupDateInputHandling();
   }
 
-  private setupDateInputHandling() {
-    // This will run after the view is initialized
-    const dateInput = document.getElementById('appointment_date') as HTMLInputElement;
-    if (dateInput) {
-      dateInput.addEventListener('focus', () => {
-        dateInput.type = 'date';
-      });
-      
-      dateInput.addEventListener('input', () => {
-        // Only change type if the input is empty
-        if (!dateInput.value) {
-          dateInput.type = 'text';
-        }
-      });
+  // 🔹 Switch to date input on focus
+  switchToDate() {
+    this.dateInputType = 'date';
+  }
+
+  // 🔹 Switch back to text if empty
+  switchToText() {
+    if (!this.selectedDate) {
+      this.dateInputType = 'text';
     }
   }
 

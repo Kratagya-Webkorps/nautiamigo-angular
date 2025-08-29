@@ -56,21 +56,21 @@
                     <div class="col-md-12">
                       <div class="input1_wrapper">
                         <div class="input1_inner">
-                          <input
-                            type="date"
-                            class="form-control date-input"
-                            [attr.min]="today"
-                            (focus)="showDatePicker($event)"
-                            [(ngModel)]="selectedDate"
-                            name="activityDate"
-                            data-placeholder="Activity Date"
-                          />
+  
+                        <input
+                        [type]="dateInputType"
+                        placeholder="Activity Date"
+                        class="form-control date-input"
+                        [attr.min]="today"
+                        (focus)="switchToDate()"
+                        (blur)="switchToText()"
+                        [(ngModel)]="selectedDate"
+                        name="activityDate"
+                        />
                         </div>
                       </div>
                     </div>
-                   
-                    
-                    <div class="col-md-12">
+                   <div class="col-md-12">
                       <div class="input1_wrapper">
                         <div class="input10_inner">
                           <input
