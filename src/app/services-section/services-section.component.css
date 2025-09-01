@@ -259,3 +259,29 @@
     color: #ffffff80 !important;
     margin: 0; 
   }
+  .barlow-condensed {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    
+    font-size: 15px !important;
+    line-height: 18.8px !important; 
+    letter-spacing: 3px !important; 
+    color: #aa8453 !important;
+    margin: 0; 
+  }
+
+  .gilda-display {
+    font-family: 'Gilda Display', serif !important;
+    
+    font-size: 32px !important;
+    line-height: 48px !important; 
+    color: #ffffff !important;
+    margin: 0; 
+  }
+
+  .services .butn-dark a {
+    font-family: Barlow Condensed, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    letter-spacing: 3px !important;
+    color:#ffffff !important; 
+  }
