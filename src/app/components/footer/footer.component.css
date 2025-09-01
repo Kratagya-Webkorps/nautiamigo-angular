@@ -28,7 +28,7 @@
     height: 60px;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;
+    background-color: #aa8453; /* Changed to golden yellow */
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -43,12 +43,13 @@
   }
 
   .whatsapp-float:hover {
-    background-color: #128C7E;
+    background-color: #8a6c3f; /* Slightly darker gold on hover */
     transform: scale(1.1);
   }
 
   .whatsapp-float i {
     margin-top: 3px;
+    color: #fff !important; /* Ensure icon is white */
   }
 
   .footer {
@@ -261,3 +262,6 @@ transition: all 500ms ease;
 .footer-bottom-copy-right a:hover {
 color: #aa8453;
 }
+
+/* Removing conflicting styles */
+
