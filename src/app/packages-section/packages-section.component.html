@@ -30,13 +30,15 @@
     <div class="packages-row bottom">
       <div class="bottom-package-item" *ngFor="let package of bottomPackages">
         <img class="package-img" [src]="package.image" [alt]="package.name">
+        
         <button class="book-button-bottom">BOOK</button>
+        <div class="bottom-content">
         <div class="bottom-price">{{ package.price }}</div>
         <div class="bottom-title">{{ package.name }}</div>
+      </div>
         <div class="bottom-line"></div>
+        
         <div class="package-details">Details</div>
-          
-         
       </div>
     </div>
   </div>

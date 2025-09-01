@@ -469,3 +469,27 @@
 .bottom-package-item:hover .package-img {
   transform: scale(1.08);  /* zooms inside container */
 }
+
+.bottom-package-item {
+  position: relative; /* so the line is positioned inside */
+  overflow: hidden;
+}
+
+.bottom-line {
+  position: absolute;
+  bottom: 50px;             /* adjust depending on where you want it */
+  left: 25px;
+  height: 1px;
+  width: 55px;              /* small starting width */
+  background-color: #fff;
+  transform-origin: left;
+  transition: width 1s ease;  /* smooth transition */
+}
+
+.bottom-package-item:hover .bottom-line {
+  width: calc(100% - 50px); 
+  transform: translateY(-50px); 
+}
+
+
+
