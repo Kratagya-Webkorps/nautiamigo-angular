@@ -323,8 +323,14 @@
   }
   
   .phone-highlight {
+    font-family: 'Barlow', sans-serif; 
+    font-size: 24px !important;
+    line-height: 26.3px; 
+    letter-spacing: -1px; 
+    color: #aa8453 !important;
+    text-transform: uppercase;
     
-    color: #A58051 !important; 
+  
   }
   .barlow-description {
     font-family: 'Barlow', sans-serif;
