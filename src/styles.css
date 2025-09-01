@@ -3,3 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all elements respect the viewport width */
+* {
+  box-sizing: border-box;
+}
+
+/* Make sure hero section doesn't cause horizontal scroll */
+.hero-swiper,
+.hero-swiper .swiper-wrapper,
+.hero-swiper .swiper-slide,
+.hero-swiper .item {
+  max-width: 100vw;
+  overflow: hidden;
+}
