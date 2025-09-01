@@ -85,10 +85,9 @@
   .section-title {
     font-family: 'Playfair Display', serif;
     font-weight: 700; 
-    font-size: 48px;  
+    font-size: 46px;  
     color: #ffffff;
-    font-size: 48px;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 1.2;
     margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
@@ -343,6 +342,27 @@
     position: absolute;
     top: 500px;   
     left: -25px;  
+  }
+  
+  .reservations {
+    display: flex;
+    align-items: center;   /* makes icon + text align vertically */
+    gap: 10px;             /* space between icon and text */
+  }
+  
+  .reservations .phone-icon {
+    font-size: 2rem;       /* adjust size until it matches text height */
+    line-height: 1;        /* prevent extra spacing inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aa8453;        /* optional: highlight */
+  }
+  
+  .reservations .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   
