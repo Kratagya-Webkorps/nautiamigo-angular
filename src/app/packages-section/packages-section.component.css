@@ -524,3 +524,63 @@
   transform: translateY(-50px); /* move text up by 50px */
 }
 
+/* Details bottom-right */
+.bottom-package-item .package-details {
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* Show details on hover */
+.bottom-package-item:hover .package-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Icons bottom-left */
+.bottom-package-item .package-icons {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.bottom-package-item .package-icons i {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* Show icons on hover */
+.bottom-package-item:hover .package-icons i {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animate line + text upwards */
+.bottom-package-item:hover .bottom-content,
+.bottom-package-item:hover .bottom-line {
+  transform: translateY(-50px);
+}
+
+/* Line expands smoothly */
+.bottom-line {
+  transition: width 1s ease, transform 0.5s ease;
+}
+
+.bottom-package-item:hover .bottom-line {
+  width: calc(100% - 50px); 
+}
+
