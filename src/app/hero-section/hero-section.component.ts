@@ -25,7 +25,7 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
         
         // Basic settings
         loop: true,
-        speed: 1000,
+        speed: 100,
         
         // Effect
         effect: 'fade',
@@ -35,7 +35,7 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
         
         // Autoplay
         autoplay: {
-          delay: 5000,
+          delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: false
         },

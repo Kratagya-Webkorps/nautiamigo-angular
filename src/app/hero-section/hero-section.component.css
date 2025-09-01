@@ -59,31 +59,31 @@
   letter-spacing: 8px;
   margin-bottom: 40px;
   margin-top: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  width: 700px;
 }
 
 .slide-subtitle {
   font-family: 'Barlow Condensed', serif;
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 18.8px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   margin-bottom: 18px;
-  opacity: 0.95;
 }
 
 .offer-btn {
   display: inline-block;
-  padding: 12px 38px;
-  border: 2px solid #fff;
+  padding: 10px 10px;
+  border: 1px solid #fff;
   color: #fff;
   background: transparent;
-  border-radius: 40px;
-  font-size: 18px;
-  font-family: 'Barlow Condensed', serif;
-  font-weight: 600;
-  letter-spacing: 2px;
+  border-radius: 0px;
+  font-size: 15px;
+  font-family: 'Barlow Condensed', serif !important;
+  letter-spacing: 3px;
+  line-height: 18px;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
