@@ -15,24 +15,9 @@ export class ReservationBookingComponent implements OnInit {
   today: string = '';
   selectedDate: string = '';
 
-  // 🔹 NEW: control the input type dynamically
-  dateInputType: string = 'text';
-
   ngOnInit() {
     register();
-    this.today = new Date().toISOString().split('T')[0];
-  }
-
-  // 🔹 Switch to date input on focus
-  switchToDate() {
-    this.dateInputType = 'date';
-  }
-
-  // 🔹 Switch back to text if empty
-  switchToText() {
-    if (!this.selectedDate) {
-      this.dateInputType = 'text';
-    }
+    this.today = new Date().toISOString().split('T')[0]; // sets today's date as min
   }
 
   // Client logos data

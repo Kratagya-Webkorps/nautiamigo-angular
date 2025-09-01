@@ -57,7 +57,7 @@
                       <div class="input1_wrapper">
                         <div class="input1_inner">
   
-                        <input
+                        <!-- <input
                         [type]="dateInputType"
                         placeholder="Activity Date"
                         class="form-control date-input"
@@ -66,7 +66,15 @@
                         (blur)="switchToText()"
                         [(ngModel)]="selectedDate"
                         name="activityDate"
-                        />
+                        /> -->
+                        <input
+  type="date"
+  class="form-control date-input"
+  [(ngModel)]="selectedDate"
+  name="activityDate"
+  [attr.min]="today"
+  data-placeholder="Activity Date"
+/>
                         </div>
                       </div>
                     </div>
