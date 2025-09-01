@@ -38,7 +38,7 @@ export class AdditionalServicesComponent implements OnInit {
     {
       id: 3,
       title: 'SEMINARS',
-      description: 'A perfect place for your seminars and workshops.',
+      description: 'Ride will be safe and secure for all the biddies joining.',
       icon: 'fas fa-chalkboard-teacher',
       animationDelay: 400,
       customClass: 'seminars'
@@ -46,21 +46,21 @@ export class AdditionalServicesComponent implements OnInit {
     {
       id: 4,
       title: 'FILM SHOOT',
-      description: 'Ideal location for film and photo shoots.',
+      description: 'Celebrate Your Last Night of Singledom on a Bachelorette Party Boat in Goa.',
       icon: 'fas fa-video',
       animationDelay: 0
     },
     {
       id: 5,
       title: 'BIRTHDAYS',
-      description: 'Celebrate your special day with us.',
+      description: 'Renewing your vows? Celebrating a lifetime of love with your husband or wife.',
       icon: 'fas fa-birthday-cake',
       animationDelay: 200
     },
     {
       id: 6,
       title: 'FAMILY EVENTS',
-      description: 'Perfect setting for family gatherings and events.',
+      description: 'Makes sense that you‘d want to throw a  party for your loved one when it‘s their turn.',
       icon: 'fas fa-users',
       animationDelay: 400,
       customClass: 'family-events'
