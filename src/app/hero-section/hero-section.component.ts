@@ -46,7 +46,6 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
           prevEl: '.swiper-button-prev',
         },
         
-        // NO PAGINATION - Removed completely
         
         // Responsive
         breakpoints: {
