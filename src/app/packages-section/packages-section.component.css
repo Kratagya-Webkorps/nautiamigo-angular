@@ -385,3 +385,87 @@
 .package-item:hover .package-line {
   width: 100%;
 }
+
+.package-icons {
+  position: absolute;
+  left: 25px;        /* tweak to match screenshot */
+  bottom: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none; /* icons are decorative; remove if clickable */
+}
+
+.package-icons i {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.95;
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+/* subtle lift when hovering the whole item */
+.package-item:hover .package-icons i {
+  transform: translateY(-6px);
+  opacity: 1;
+}
+
+.package-icons {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Icons hidden initially */
+.package-icons i,
+.package-icons .icon {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* Show when hover */
+.package-item:hover .package-icons i,
+.package-item:hover .package-icons .icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.package-line {
+  width: 55px;              /* small starting line */
+  height: 1px;
+  background-color: #FFFFFF;
+  margin-top: 8.2px;
+  transition: width 1s ease;  /* smooth transition */
+  transform-origin: left;       /* grows from left → right */
+}
+
+.package-item:hover .package-line {
+  width: 100%;   /* full width of container */
+}
+
+.package-item,
+.bottom-package-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* keeps zoom inside */
+}
+
+/* image fills container */
+.package-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* zoom on hover */
+.package-item:hover .package-img,
+.bottom-package-item:hover .package-img {
+  transform: scale(1.08);  /* zooms inside container */
+}
