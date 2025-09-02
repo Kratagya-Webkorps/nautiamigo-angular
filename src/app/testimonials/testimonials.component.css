@@ -1,6 +1,6 @@
 .testimonials {
   background-color: #181818;
-  min-height: 750px;
+  height: 610px;
   width: 100%;
   color: white;
   overflow: visible
@@ -121,7 +121,7 @@
   line-height: 26.3px;   /* font height */
   letter-spacing: 0px; /* line spacing */
   color: #ffffff;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 .testimonial-footer .author-details h6 {
