@@ -10,7 +10,7 @@
   position: relative;
   top: 150px;
   left: 315px;
-  overflow: visible; /* Ensure content isn't clipped */
+  overflow: visible; 
 }
 
 
@@ -18,7 +18,7 @@
 .testimonial-footer {
   display: flex;
   align-items: center;
-  gap: 15px; /* spacing between image and text */
+  gap: 15px; 
   margin-top: 20px;
 }
 
@@ -29,7 +29,7 @@
 .testimonial-footer .author-img img {
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* makes it circular */
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .testimonial-footer .author-details .rating {
-  color: #ffaa00; /* golden yellow stars */
+  color: #ffaa00; 
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -49,13 +49,13 @@
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  color: #ffffff; /* white text */
+  color: #ffffff; 
   margin: 0;
 }
 
 .testimonial-footer .author-details span {
   font-size: 13px;
-  color: #aaa; /* light gray subtitle */
+  color: #aaa; 
   text-transform: capitalize;
 }
 
@@ -77,69 +77,110 @@
 
 
 
-/* Adjust pagination position */
+
 .testimonials-swiper::part(pagination) {
   position: absolute;
-  bottom: -0px !important; /* Move down by 50px */
-  left: -950px !important;  /* Move left by 30px */
+  bottom: -0px !important; 
+  left: -950px !important; 
   transform: translateX(50%);
 }
 
 .heading {
-  font-family: "Barlow Condensed", sans-serif; /* Barlow Condensed Regular */
+  font-family: "Barlow Condensed", sans-serif; 
   font-size: 12px;
-  line-height: 15px;   /* font height */
-  letter-spacing: 6px; /* line spacing */
+  line-height: 15px;   
+  letter-spacing: 6px; 
   color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   
 }
 
 .sub-heading {
-  font-family: "Gilda Display", sans-serif; /* Barlow Condensed Regular */
+  font-family: "Gilda Display", sans-serif; 
   font-size: 32px;
-  line-height: 40px;   /* font height */
-  letter-spacing: 0px; /* line spacing */
+  line-height: 40px;   
+  letter-spacing: 0px; 
   color: #ffffff;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 
 
 .underline {
-  width: 60px;          /* line width */
-  height: 1px;          /* line thickness */
+  width: 60px;          
+  height: 1px;          
   background-color: #464646;
   border-radius: 2px;
-  margin-bottom: 15px;     /* spacing below heading */
+  margin-bottom: 10px;     
   position: relative;
-  left: 0px;         /* move left if you really want */
+  left: 0px;         
 }
-.testimonial-content{
-  font-family: "Barlow Regular", sans-serif; /* Barlow Condensed Regular */
-  font-size: 15px;
-  line-height: 26.3px;   /* font height */
-  letter-spacing: 0px; /* line spacing */
-  color: #ffffff;
+.testimonial-content {
   padding-bottom: 0px;
 }
 
+.testimonial-content p {
+  font-family: "Barlow", sans-serif !important; 
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 26.3px !important;   
+  letter-spacing: 0px !important; 
+  color: #ffffff !important;
+  margin: 0;
+}
+
 .testimonial-footer .author-details h6 {
-  font-family: "Barlow Condensed", sans-serif; /* Barlow Condensed Regular */
+  font-family: "Barlow", sans-serif; 
   font-weight: 400;
   font-size: 15px;
-  line-height: 15px;   /* font height */
-  letter-spacing: 3px; /* line spacing */
+  line-height: 15px;   
+  letter-spacing: 3px; 
   color: #ffffff;
   padding-bottom: 15px;
 }
 
 .testimonial-footer .author-details span {
-  font-family: "Barlow Condensed", sans-serif; /* Barlow Condensed Regular */
+  font-family: "Barlow", sans-serif; 
   font-weight: 400;
   font-size: 12px;
-  line-height: 12px;   /* font height */
-  letter-spacing: 0px; /* line spacing */
+  line-height: 12px;   
+  letter-spacing: 0px; 
   color: #ffffff;
   padding-bottom: 15px;
 }
+
+.testimonials .testimonial-content p {
+  font-family: "Barlow Condensed", sans-serif; 
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  position: relative;
+  padding-right: 40px; 
+}
+
+.testimonials .testimonial-content p::after {
+  content: "”"; 
+  font-size: 200px; 
+  color: rgba(255, 255, 255, 0.1); 
+  position: absolute;
+  right: 30px;
+  bottom: -90px;
+  font-family: Georgia, serif;
+}
+
+
+.testimonials-swiper::part(pagination-bullet) {
+  background-color: #aa8453 !important;     
+  opacity: 0.6;                
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.testimonials-swiper::part(pagination-bullet-active) {
+  background-color: #aa8453 !important;   
+  opacity: 1;
+  transform: scale(1.2);
+}
+
