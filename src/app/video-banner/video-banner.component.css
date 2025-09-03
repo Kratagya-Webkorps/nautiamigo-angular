@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-/* Play Button */
+/* 
 .vid-butn {
   display: inline-block;
   width: 80px;
@@ -75,20 +75,45 @@
   margin-top: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+} */
 
-.vid-butn:hover {
+/* .vid-butn:hover {
   transform: scale(1.1);
   background: #ff9900;
-}
+} */
 
-.vid-butn .icon {
+/* .vid-butn .icon {
   color: #fff;
   font-size: 30px;
   display: inline-block;
   margin-left: 5px;
-}
+} */
 
+/* Play Button */
+.vid-butn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;         /* Bigger circle */
+    height: 100px;
+    border: 2px solid #ffffff;  /* White border */
+    border-radius: 50%;
+    background: transparent;    /* Transparent background */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .vid-butn:hover {
+    transform: scale(1.1);
+    border-color: #ffb400;   /* Gold border on hover (optional) */
+  }
+  
+  .vid-butn .icon {
+    color: #b8860b;   /* Golden brown play triangle */
+    font-size: 36px;
+    margin-left: 4px; /* Centers triangle visually */
+  }
+  
 /* Section Title */
 .section-title {
   font-size: 36px;
@@ -113,3 +138,27 @@
   margin: 0 2px;
   font-size: 18px;
 }
+
+.star {
+    display: inline-block;
+    position: relative;
+    top: -10px; 
+  }
+
+  .section-subtitle span {
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-size: 15px;
+    line-height: 26.3px;
+    letter-spacing: 6px;  
+    color: #ffffff;
+    font-weight: 400; 
+  }
+
+  .section-title span {
+    font-family: 'Gilda Display', serif; 
+    font-size: 46px;
+    line-height: 57.5px;
+    color: #ffffff;
+    letter-spacing: 0px;
+    font-weight: 400; 
+  }
