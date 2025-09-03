@@ -162,3 +162,13 @@
     letter-spacing: 0px;
     font-weight: 400; 
   }
+
+  .bg-img {
+    background-size: cover;        /* Ensures the image covers the section */
+    background-position: center;   /* Always centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+  }
+  
+  .bg-fixed {
+    background-attachment: fixed;  /* Creates that parallax fixed effect */
+  }
