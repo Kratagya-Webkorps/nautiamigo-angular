@@ -10,14 +10,15 @@ import {ServicesSectionComponent} from "./services-section/services-section.comp
 import {ReservationBookingComponent} from "./reservation-booking/reservation-booking.component"
 import {TestimonialsComponent} from "./testimonials/testimonials.component"
 import {AdditionalServicesComponent} from "./additional-services/additional-services.component"
-import {EventsSectionComponent} from "./events-section/events-section.component"
+// import {EventsSectionComponent} from "./events-section/events-section.component"
 import {CruisePackagesComponent} from "./cruise-packages/cruise-packages.component"
 import {EventsSectionLatestComponent} from "./events-section-latest/events-section.component"
+import {PromoVideoComponent } from "./video-banner/video-banner.component"
 
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet, NavbarComponent,FooterComponent,HeroSectionComponent,AboutSectionComponent,PackagesSectionComponent,ServicesSectionComponent,ReservationBookingComponent,TestimonialsComponent,AdditionalServicesComponent,EventsSectionComponent,CruisePackagesComponent,EventsSectionLatestComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, HeroSectionComponent, AboutSectionComponent, PackagesSectionComponent, ServicesSectionComponent, ReservationBookingComponent, TestimonialsComponent, AdditionalServicesComponent, CruisePackagesComponent, EventsSectionLatestComponent, PromoVideoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
