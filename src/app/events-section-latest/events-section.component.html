@@ -1,0 +1,43 @@
+<section class="events-section">
+    <div class="events-container">
+      <!-- Left Column -->
+      <div class="events-info">
+        <p class="subtitle">OPT US FOR ALL YOUR IMPORTANT EVENTS</p>
+        <h2 class="title">Events That We Offer</h2>
+        <p class="description">
+          The best prices for your relaxing vacation. The utanslien quam
+          nestiblum ac quame odion elementum sceisue the aucan.
+        </p>
+        <p class="description">
+          Orci varius natoque penatibus et magnis disnsey parturient monte nascete
+          ridiculus mus nellen etesque habitant morbire.
+        </p>
+        <div class="contact">
+          <i class="fas fa-phone-alt"></i>
+          <span>For information</span>
+          <strong>932 410 5081</strong>
+        </div>
+      </div>
+  
+      <!-- Swiper Container -->
+      <div class="swiper events-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let event of events">
+            <div class="event-card">
+              <div class="event-image">
+                <img [src]="event.image" [alt]="event.title" />
+              </div>
+              <div class="event-content">
+                <h3>{{ event.title }}</h3>
+                <p>{{ event.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  
