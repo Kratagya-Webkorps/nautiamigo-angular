@@ -172,12 +172,15 @@ swiper-slide {
 } */
 .heading {
   position: absolute;
-  top: 120px;
-  left: 350px;
-  font-size: 12px;
-  letter-spacing: 3px;
+  top: 100px;
+  left: 360px;
+  font-size: 15px;
+  letter-spacing: 6px;
+  line-height: 26.3px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  color: #d4af37; /* golden */
+  color: #aa8453; /* golden */
   margin: 0; /* remove default h6 margin */
+  width: 335px;
 }
+
