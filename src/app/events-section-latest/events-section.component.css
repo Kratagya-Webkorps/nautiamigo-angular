@@ -2,6 +2,7 @@
   background: #111;
   color: #fff;
   padding: 60px 0;
+  height:1080px;
 }
 
 .events-grid {
@@ -79,4 +80,59 @@
 
 .events {
   height: 1050px;          
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  font-family: "Barlow", sans-serif;
+  color: #aa8453; /* golden color for text */
+}
+
+.contact-info i {
+  font-size: 28px; /* bigger phone icon */
+  color: #aa8453;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column; /* stack text vertically */
+  line-height: 1.3;
+}
+
+.contact-text .info-label {
+  font-size: 14px;
+  color: #fff; /* white/grey for small text */
+}
+
+.contact-text .phone-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #aa8453; /* golden accent */
+}
+.events {
+  position: relative;
+}
+.events-swiper {
+  height: 100%;     /* takes full height of .events */
+}
+.contact-info {
+  position: absolute;
+  top: 550px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Barlow", sans-serif;
+  color: #aa8453;
+}
+swiper-slide {
+  position: relative; /* ensures absolute children position inside */
+  height: 880px;  /* big enough so top: 350px stays visible */
+}
+.contact-info {
+  position: absolute;
+  top: 375px;
+  left: 90px;
 }
