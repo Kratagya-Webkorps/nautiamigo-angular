@@ -139,3 +139,18 @@ swiper-slide {
   letter-spacing: 0px;
   color: #adadad;
 }
+
+.events-left {
+  position: relative;
+  top: 120px;
+  left: 100px;
+  width: 325px;
+}
+
+.events-left p {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 26.3px;
+  letter-spacing: 0px;
+  color: #adadad;
+}
