@@ -183,4 +183,13 @@ swiper-slide {
   margin: 0; /* remove default h6 margin */
   width: 335px;
 }
+/* Recommended — keeps grid layout and pushes the right column down */
+.events-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 
+  /* NEW: push the two right-side event boxes 105px down */
+  padding-top: 45px;
+  box-sizing: border-box; /* ensures padding doesn't change width unexpectedly */
+}
