@@ -213,5 +213,56 @@ swiper-slide {
   overflow-y: auto;
   box-sizing: border-box;
 }
+.contact-info {
+  position: absolute;
+  top: 880px;   /* adjust depending on your design */
+  left: 90px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Barlow", sans-serif;
+  color: #aa8453; /* golden accent */
+}
+
+.contact-info i {
+  font-size: 28px; /* bigger phone icon */
+  color: #aa8453;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column; /* stack label + number */
+  line-height: 1.3;
+}
+
+.contact-text .info-label {
+  font-size: 15px;
+  line-height: 26px;
+  color: #adadad;
+}
+
+.contact-text .phone-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #aa8453;
+}
+.events-swiper {
+  height: 100%;     
+  width: 65%;       /* swiper only takes 65% of width */
+  margin-left: 470px; /* push swiper to the right so text stays visible */
+  margin-top: -200px;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  position: absolute;
+  top: 475px;   /* adjust depending on your design */
+  left: 360px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Barlow", sans-serif;
+  color: #aa8453; /* golden accent */
+}
 
 
