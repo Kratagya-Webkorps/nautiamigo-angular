@@ -265,4 +265,20 @@ swiper-slide {
   color: #aa8453; /* golden accent */
 }
 
+.events-right {
+  display: grid;
+  grid-template-columns: repeat(2, 350px); /* force 2 images to be 350px wide */
+  gap: 30px;
+  justify-content: start; /* prevents stretching */
+}
+
+.event-box {
+  width: 350px;   /* keep container same as image */
+}
+
+.event-box img {
+  width: 350px;   /* fixed width */
+  height: 200px;  /* keep your current height */
+  object-fit: cover;
+}
 
