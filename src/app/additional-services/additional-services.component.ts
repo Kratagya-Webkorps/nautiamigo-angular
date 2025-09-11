@@ -74,7 +74,7 @@ export class AdditionalServicesComponent implements OnInit {
   }
 
   initializeAnimations(): void {
-    // Initialize fade-in animations after component loads
+    
     setTimeout(() => {
       const elements = document.querySelectorAll('.animate-box');
       elements.forEach((element, index) => {
@@ -86,7 +86,7 @@ export class AdditionalServicesComponent implements OnInit {
   }
 
   onServiceHover(serviceId: number): void {
-    // Handle service hover effects if needed
-    console.log(`Hovered on service ${serviceId}`);
+    
+    
   }
 }

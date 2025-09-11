@@ -1,4 +1,4 @@
-/* Additional Services Section Styles */
+
 .facilties {
   font-size: 0.1em;
   background-color: #222222;
@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-/* Section Headers */
+
 .section-subtitle {
   position:absolute;
   top:120px;
@@ -73,8 +73,7 @@
   font-family: 'Gilda Display', serif;
 }
 
-/*  */
-/* Service Cards */
+
 .single-facility {
   position: relative;
   text-align: left;
@@ -92,7 +91,7 @@
   border: 2px solid #2b2b2b;
 }
 
-/* Icons */
+
 .single-facility > span {
   font-size: 50px;
   color: #c9a961;
@@ -103,7 +102,7 @@
   z-index: 2;
 }
 
-/* Service Title */
+
 .single-facility h5 {
   font-family: 'Gilda Display', serif;
   font-size: 24px;
@@ -121,7 +120,7 @@
   box-sizing: border-box;
 }
 
-/* Service Description */
+
 .single-facility p {
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
@@ -138,16 +137,7 @@
   box-sizing: border-box;
 }
 
-/* Background Shape */
-/* .facility-shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.03;
-  z-index: 1;
-  transition: all 0.4s ease-in-out;
-} */
+
 
 .facility-shape span {
   font-size: 180px;
@@ -155,9 +145,7 @@
   display: block;
 }
 
-/* Shape hover effects removed */
 
-/* Animation Classes */
 .animate-box {
   opacity: 0;
   transform: translateY(50px);
@@ -169,7 +157,7 @@
   transform: translateY(0);
 }
 
-/* Icons */
+
 .single-facility > span[class^="flaticon-"] {
   font-size: 48px;
   color: #c9a961;
@@ -179,7 +167,7 @@
   line-height: 1;
 }
 
-/* Responsive Design */
+
 @media (max-width: 991px) {
   .col-md-4 {
     flex: 0 0 50%;
