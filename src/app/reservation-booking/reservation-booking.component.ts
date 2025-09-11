@@ -17,10 +17,9 @@ export class ReservationBookingComponent implements OnInit {
 
   ngOnInit() {
     register();
-    this.today = new Date().toISOString().split('T')[0]; // sets today's date as min
+    this.today = new Date().toISOString().split('T')[0]; 
   }
 
-  // Client logos data
   clients = [
     { src: '../../assets/clients/1.png', alt: 'Client 1' },
     { src: '../../assets/clients/2.png', alt: 'Client 2' },
