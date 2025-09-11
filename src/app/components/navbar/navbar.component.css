@@ -366,19 +366,19 @@
   transition: color 0.25s ease;
 }
 
-/* hover -> golden */
+
 .header .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:hover {
   color: #aa8453;
 }
 
-/* Default navbar background for non-hero pages */
+
 .navbar {
-    position: fixed;  /* keeps it on top */
+    position: fixed;  
     top: 0;
     left: 0;
     width: 100%;
-    background: #1b1b1b; /* dark background */
+    background: #1b1b1b; 
     z-index: 99;
   }
   
