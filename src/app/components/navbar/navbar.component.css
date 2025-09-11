@@ -371,3 +371,14 @@
 .navbar .navbar-nav .nav-link:hover {
   color: #aa8453;
 }
+
+/* Default navbar background for non-hero pages */
+.navbar {
+    position: fixed;  /* keeps it on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1b1b1b; /* dark background */
+    z-index: 99;
+  }
+  
