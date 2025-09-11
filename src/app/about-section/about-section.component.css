@@ -70,15 +70,6 @@
   }
   
  
-  /* .section-subtitle {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: #d4af37;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-  } */
   
   
   
@@ -149,12 +140,12 @@
     position: relative;
   }
   
-  /* Position left image (8.jpeg) 200px from top */
+ 
   .col-md-3:has(img[src*="8.jpeg"]) {
     margin-top: 0px;
   }
   
-  /* Position right image (2.jpeg) 115px from top */
+  
   .col-md-3:has(img[src*="2.jpeg"]) {
     margin-top: -100px;
   }
@@ -253,11 +244,6 @@
       font-size: 32px;
     }
     
-    /* .reservations {
-      flex-direction: column;
-      gap: 15px;
-      align-items: stretch;
-    } */
     
     .row {
       gap: 20px;
@@ -346,17 +332,17 @@
   
   .reservations {
     display: flex;
-    align-items: center;   /* makes icon + text align vertically */
-    gap: 10px;             /* space between icon and text */
+    align-items: center;   
+    gap: 10px;             
   }
   
   .reservations .phone-icon {
-    font-size: 2rem;       /* adjust size until it matches text height */
-    line-height: 1;        /* prevent extra spacing inside */
+    font-size: 2rem;       
+    line-height: 1;        
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #aa8453;        /* optional: highlight */
+    color: #aa8453;        
   }
   
   .reservations .text {
