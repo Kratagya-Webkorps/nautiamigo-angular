@@ -281,4 +281,15 @@ swiper-slide {
   height: 200px;  /* keep your current height */
   object-fit: cover;
 }
+.events-right .event-box:first-child img {
+  height: 590px;   /* taller first image */
+  width: 350px;
+  object-fit: cover;
+}
+
+/* Second image in each slide */
+.events-right .event-box:nth-child(2) img {
+  height: 206px;   /* taller second image */
+  width: 350px;
+}
 
