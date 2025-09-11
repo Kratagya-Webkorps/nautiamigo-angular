@@ -18,36 +18,36 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // Initialize Swiper after view is loaded
+   
     setTimeout(() => {
       const swiper = new Swiper('.hero-swiper', {
         modules: [Navigation, Autoplay, EffectFade],
         
-        // Basic settings
+        
         loop: true,
         speed: 100,
         
-        // Effect
+        
         effect: 'fade',
         fadeEffect: {
           crossFade: true
         },
         
-        // Autoplay
+        
         autoplay: {
           delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: false
         },
         
-        // Navigation arrows
+        
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
         
         
-        // Responsive
+        
         breakpoints: {
           0: {
             slidesPerView: 1,
@@ -61,7 +61,7 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
         }
       });
 
-      console.log('Swiper initialized successfully');
+      //console.log('Swiper initialized successfully');
     }, 100);
   }
 }

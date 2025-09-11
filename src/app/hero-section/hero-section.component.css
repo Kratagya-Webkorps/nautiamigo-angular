@@ -422,6 +422,6 @@ hr {
 }
 
 .header div.reservation a {
-    text-decoration: none;   /* removes underline */
-    color: inherit;          /* makes link color inherit parent text color */
+    text-decoration: none;   
+    color: inherit;
   }
