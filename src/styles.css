@@ -1,9 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import "~swiper/swiper-bundle.min.css"; */
+@import "~swiper/swiper-bundle.min.css"; 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
-/* Prevent horizontal scrolling */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -11,12 +9,12 @@ html, body {
   padding: 0;
 }
 
-/* Ensure all elements respect the viewport width */
+
 * {
   box-sizing: border-box;
 }
 
-/* Make sure hero section doesn't cause horizontal scroll */
+
 .hero-swiper,
 .hero-swiper .swiper-wrapper,
 .hero-swiper .swiper-slide,
