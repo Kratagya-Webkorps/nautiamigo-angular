@@ -1,10 +1,8 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Import Swiper modules
 import { register } from 'swiper/element/bundle';
 
-// Register Swiper custom elements
 register();
 
 interface Testimonial {
