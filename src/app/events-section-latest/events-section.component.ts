@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 
-// Register Swiper custom elements
+
 register();
 
 @Component({
@@ -12,5 +12,5 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class EventsSectionLatestComponent {
-  // keep empty for now
+  
 }
