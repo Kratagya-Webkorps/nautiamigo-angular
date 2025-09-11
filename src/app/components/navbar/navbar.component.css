@@ -381,4 +381,14 @@
     background: #1b1b1b; 
     z-index: 99;
   }
+
+
+.navbar.transparent {
+  background: transparent !important;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: none;
+}
   
