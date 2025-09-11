@@ -21,14 +21,14 @@
     background-color: #aa8453;
   }
 
-  /* WhatsApp Float Button */
+  
   .whatsapp-float {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 20px;
     right: 20px;
-    background-color: #aa8453; /* Changed to golden yellow */
+    background-color: #aa8453; 
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -43,13 +43,13 @@
   }
 
   .whatsapp-float:hover {
-    background-color: #8a6c3f; /* Slightly darker gold on hover */
+    background-color: #8a6c3f; 
     transform: scale(1.1);
   }
 
   .whatsapp-float i {
     margin-top: 3px;
-    color: #fff !important; /* Ensure icon is white */
+    color: #fff !important;   
   }
 
   .footer {
@@ -198,7 +198,7 @@ background-color: #aa8453;
 }
 
 
-/* language */
+
 .footer-language {
   width: 160px;
   display: flex;
@@ -263,5 +263,5 @@ transition: all 500ms ease;
 color: #aa8453;
 }
 
-/* Removing conflicting styles */
+
 
