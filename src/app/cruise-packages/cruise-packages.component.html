@@ -4,12 +4,12 @@
       <div class="section-title">Our Packages</div>
       <div id="cruise-container">
         
-        <!-- <div class="cruise-card" *ngFor="let offer of offers"> -->
+        
           <div class="cruise-card" *ngFor="let offer of offers; let i = index">
           <div class="card">
             <div class="flex flex-row-custom g-1">
               
-              <!-- Image Section -->
+              
               <div class="slider">
                 <div navigation="true" pagination="true" autoplay="true" loop="true">
                   <div>
@@ -20,7 +20,7 @@
                 </div>
               </div>
   
-              <!-- Info Section -->
+              
               <div class="info">
                 <span class="rating">
                   <strong>
@@ -57,7 +57,7 @@
                 </div>
               </div>
   
-              <!-- Payments Section -->
+                
               <div class="payments" [ngClass]="{ 'top-three': (i < 3) && !isLakhs(offer) }">
                 <div class="amount" [ngClass]="{ 'is-lakhs': isLakhs(offer) }">
                   <h3>
@@ -71,9 +71,7 @@
                     <button class="primary-button" (click)="callPhone('9324105081')">
                       Book Now
                     </button>
-                    <!-- <button class="secondary-button m-ele" (click)="openWhatsApp('+919324105081')">
-                      Get Details
-                    </button> -->
+                    
                   </div>
                   
                   <div class="features">

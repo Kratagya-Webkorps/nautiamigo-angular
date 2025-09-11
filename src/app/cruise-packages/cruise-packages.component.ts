@@ -597,10 +597,9 @@ export class CruisePackagesComponent implements OnInit {
   }
 
   goToService(routingUrl: string): void {
-    // Implement navigation logic here
-    console.log('Navigating to:', routingUrl);
-    // You can use Angular Router here
-    // this.router.navigate([routingUrl]);
+    
+    //console.log('Navigating to:', routingUrl);
+    
   }
 
   openWhatsApp(phoneNumber: string): void {
