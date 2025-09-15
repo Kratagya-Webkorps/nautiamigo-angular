@@ -263,5 +263,54 @@ transition: all 500ms ease;
 color: #aa8453;
 }
 
+.footer-title {
+  font-family: 'Gilda Display', serif; 
+  font-weight: 400;                    
+  font-size: 24px;                     
+  line-height: 30px;                   
+  letter-spacing: 0px;                 
+  color: #ffffff;                      
+  margin-bottom: 20px;
+}
+
+.footer-about-text {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 26.3px;                
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  margin: 0;
+}
+
+.footer-explore-list li a {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 24px;                  
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  position: relative;
+  display: block;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.footer-explore-list li a:hover {
+  padding-left: 15px;
+  color: #aa8453; 
+}
+
+.footer-contact-text {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 26.3px;                
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  margin: 0;
+  padding-bottom: 20px;               
+}
+
 
 
