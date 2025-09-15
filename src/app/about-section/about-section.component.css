@@ -350,5 +350,13 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
+  .about {
+    margin-top: -50px; 
+  }
+  .res {
+    position: absolute;
+    top: 400px;   /* 500px + 100px down */
+    left: 5px;   /* -25px + 100px right */
+  }
   
