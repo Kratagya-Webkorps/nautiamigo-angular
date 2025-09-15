@@ -28,13 +28,7 @@ html, body {
   overflow: hidden;
 }
 
-
-
-
-
-
-
- 
+/*events swiper*/
  swiper-container.events-swiper {
   --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-width: 8px;
@@ -67,6 +61,44 @@ swiper-container.events-swiper::part(bullet-active) {
 
 
 .swiper-pagination-bullet-active {
+  border: 2px solid #aa8453 !important;   
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}
+
+
+/* For testimonials swiper */
+swiper-container.testimonials-swiper {
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  
+  --swiper-pagination-color: transparent !important;                
+  --swiper-pagination-bullet-inactive-color: transparent !important;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-theme-color: transparent !important;                    
+}
+
+swiper-container.testimonials-swiper::part(bullet) {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+swiper-container.testimonials-swiper::part(bullet-active) {
+  border: 2px solid #aa8453 !important;  
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}
+
+
+.testimonials-swiper .swiper-pagination-bullet {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
   border: 2px solid #aa8453 !important;   
   background: #aa8453 !important;        
   opacity: 1 !important;
