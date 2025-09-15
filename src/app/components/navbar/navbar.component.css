@@ -392,3 +392,13 @@
   box-shadow: none;
 }
   
+
+.logo-wrapper {
+    float: left;
+    margin-left: 90px; 
+  }
+
+  .navbar .navbar-nav {
+    margin-left: 600px!important;  
+    margin-top:5px;   
+  }
