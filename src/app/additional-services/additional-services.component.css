@@ -5,7 +5,7 @@
   color: #ffffff;
   position: relative;
   overflow: hidden;
-  height: 680px;
+  height: 860px;
   display: flex;
   align-items: center;
 }
@@ -51,7 +51,7 @@
 
 .section-subtitle {
   position:absolute;
-  top:120px;
+  top:220px;
   left:360px;
   font-size: 15px;
   letter-spacing: 6px;
@@ -63,7 +63,7 @@
 
 .section-title {
   position: absolute;
-  top: 160px;
+  top: 250px;
   left: 360px;
   font-size: 46px;
   line-height: 57.5px;
