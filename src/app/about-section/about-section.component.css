@@ -82,6 +82,7 @@
     line-height: 1.2;
     margin-bottom: 30px;
     font-family: 'Playfair Display', serif;
+    width: 310px;  
   }
   
   
@@ -356,7 +357,7 @@
   }
   .res {
     position: absolute;
-    top: 400px;   /* 500px + 100px down */
-    left: 5px;   /* -25px + 100px right */
+    top: 450px;   
+    left: 5px;   
   }
   
