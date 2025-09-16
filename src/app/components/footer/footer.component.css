@@ -358,6 +358,50 @@ color: #aa8453;
   transition: all 500ms ease;
 }
 
+/**/
+/* FontAwesome Social Icons Styling */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #aa8453;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.social-icon:hover {
+  background-color: #aa8453;
+  color: #fff;
+  
+}
+
+.social-icon i {
+  color: inherit;
+}
+
+
+
+.footer-contact-mail .fas {
+  margin-right: 8px;   
+  color: #aa8453;      
+  font-size: 16px;     
+}
+
+
 
 
 
