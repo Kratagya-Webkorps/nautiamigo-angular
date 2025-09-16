@@ -60,7 +60,7 @@ export class AdditionalServicesComponent implements OnInit {
     {
       id: 6,
       title: 'FAMILY EVENTS',
-      description: 'Makes sense that you‘d want to throw a  party for your loved one when it‘s their turn.',
+      description: 'Makes sense that you‘d want to throw a  party for your loved one when it‘s their turn to move on.',
       icon: 'fas fa-users',
       animationDelay: 400,
       customClass: 'family-events'
