@@ -61,7 +61,23 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
         }
       });
 
-      //console.log('Swiper initialized successfully');
+      
+    const navBtns = document.querySelectorAll('.custom-nav .nav-btn');
+    navBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        swiper.slideToLoop(index); 
+      });
+    });
+
+    
+    swiper.on('slideChange', () => {
+      navBtns.forEach(btn => btn.classList.remove('active'));
+      const activeIndex = swiper.realIndex;
+      navBtns[activeIndex].classList.add('active');
+    });
+
+    (navBtns[0] as HTMLElement).classList.add('active');
+      
     }, 100);
   }
 }

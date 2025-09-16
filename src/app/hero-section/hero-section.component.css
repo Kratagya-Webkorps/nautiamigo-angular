@@ -426,3 +426,29 @@ hr {
     text-decoration: none;   
     color: inherit;
   }
+
+  /* Custom navigation */
+  .custom-nav {
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+    
+  }
+  
+  .custom-nav .nav-btn {
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .custom-nav .nav-btn.active {
+    color: #aa8453; 
+    transform: scale(1.3);
+  }
+  
