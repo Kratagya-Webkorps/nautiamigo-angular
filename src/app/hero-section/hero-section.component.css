@@ -97,6 +97,7 @@
   transition: color 0.3s;
   z-index: 1;
   margin-top: -15px;
+  text-decoration: none; 
 }
 .offer-btn span {
   position: relative;
