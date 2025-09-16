@@ -39,7 +39,7 @@
               <h6>Nauti Amigo Luxury Cruise</h6>
               <h4>Cruise Enquiry Form</h4>
             </div>
-            <div class="booking-box box">
+            <!-- <div class="booking-box box">
               <div class="booking-inner clearfix">
                 <form class="form1 clearfix">
                   <div class="row">
@@ -59,13 +59,13 @@
   
                         
                         <input
-  type="date"
-  class="form-control date-input"
-  [(ngModel)]="selectedDate"
-  name="activityDate"
-  [attr.min]="today"
-  data-placeholder="Activity Date"
-/>
+                          type="date"
+                          class="form-control date-input"
+                          [(ngModel)]="selectedDate"
+                          name="activityDate"
+                          [attr.min]="today"
+                          data-placeholder="Activity Date"
+                          />
                         </div>
                       </div>
                     </div>
@@ -114,8 +114,86 @@
                   </div>
                 </form>
               </div>
+            </div> -->
+            <div class="booking-box box">
+              <div class="booking-inner clearfix">
+                <form class="form1 clearfix">
+                  <div class="row">
+                    <!-- Name -->
+                    <div class="col-md-12">
+                      <div class="input1_wrapper">
+                        <div class="input10_inner">
+                          <input type="text" placeholder="Name" />
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Phone Number -->
+                    <div class="col-md-12">
+                      <div class="input1_wrapper">
+                        <div class="input10_inner">
+                          <input type="text" placeholder="Phone Number" />
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Activity Date -->
+                    <div class="col-md-12">
+                      <div class="input1_wrapper">
+                        <div class="input1_inner">
+                          <input
+                            type="date"
+                            class="form-control date-input"
+                            [(ngModel)]="selectedDate"
+                            name="activityDate"
+                            [attr.min]="today"
+                            data-placeholder="Activity Date"
+                          />
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Adults -->
+                    <div class="col-md-6">
+                      <div class="select1_wrapper">
+                        <div class="select1_inner">
+                          <select class="form-control">
+                            <option value="0">Adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Children -->
+                    <div class="col-md-6">
+                      <div class="select1_wrapper">
+                        <div class="select1_inner">
+                          <select class="form-control">
+                            <option value="0">Children</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Submit Button -->
+                    <div class="col-md-12">
+                      <button type="submit" class="btn-form1-submit mt-15">
+                        Check Availability
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-          
+            
           </div>
           </div>
         </div>
