@@ -571,22 +571,7 @@
   flex-wrap: nowrap;
 }
 
-.amount.is-lakhs h3 {
-  flex-wrap: wrap; 
-}
 
-.amount.is-lakhs .currency,
-.amount.is-lakhs .price {
-  order: 1;
-  flex: 0 0 auto; 
-}
-
-.amount.is-lakhs .tag {
-  order: 2;
-  flex-basis: 40%; 
-  margin-top: 6px;
-  
-}
 
 .payments.top-three {
   justify-content: flex-start;
@@ -619,6 +604,3 @@
   padding: 10px 18px;  
 }
 
-.cruise-card:last-child .payments::before {
-  bottom: 40px; 
-}

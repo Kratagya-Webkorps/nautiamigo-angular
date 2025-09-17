@@ -468,7 +468,7 @@ export class CruisePackagesComponent implements OnInit {
       oldPrice: "1199",
       booked: "4M+",
       buttonText: "Book this activity & get 20% off",
-      currentPrice: "1.2 Lakhs",
+      currentPrice: "1499",
       image: "../../assets/img/dinnercruise/DC23.jpeg",
       topFeatures: [
         {
