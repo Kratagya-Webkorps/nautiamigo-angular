@@ -4,7 +4,7 @@
     background: rgb(34, 34, 34);
     position: relative;
     overflow: hidden;
-    height: 775px;       
+    height: 820px;       
     min-height: unset;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     line-height: 1.2;
     margin-bottom: 30px;
     font-family: 'Gilda Display', serif;
-    width: 310px;  
+    max-width: 500px;  
   }
   
   
@@ -151,10 +151,7 @@
     margin-top: -100px;
   }
   
-  .col img:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 25px 50px rgba(212, 175, 55, 0.3);
-  }
+  
   
   .mt-90 {
     margin-top: 90px;
