@@ -11,19 +11,30 @@ export class ServicesSectionComponent implements AfterViewInit, OnDestroy {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngAfterViewInit(): void {
+
+    setTimeout(() => {
+      this.initializeAnimations();
+    }, 100);
+  }
+
+  private initializeAnimations(): void {
     const boxes = Array.from(this.el.nativeElement.querySelectorAll('.animate-box')) as HTMLElement[];
 
-    // set a small stagger via inline transition-delay to make entrance look pleasing
+    if (boxes.length === 0) {
+      console.warn('No animate-box elements found');
+      return;
+    }
+
+    
     boxes.forEach((box, idx) => {
-      // small stagger — adjust multiplier (100) to taste
-      this.renderer.setStyle(box, 'transitionDelay', `${idx * 120}ms`);
+      this.renderer.setStyle(box, 'transition-delay', `${idx * 150}ms`);
     });
 
-    // IntersectionObserver options
+    
     const options: IntersectionObserverInit = {
       root: null,
-      rootMargin: '0px 0px -10% 0px', // trigger a bit before element fully in view
-      threshold: 0.12 // triggers when ~12% visible
+      rootMargin: '0px 0px -20% 0px', 
+      threshold: 0.1 
     };
 
     this.observer = new IntersectionObserver((entries) => {
@@ -31,21 +42,20 @@ export class ServicesSectionComponent implements AfterViewInit, OnDestroy {
         const target = entry.target as HTMLElement;
 
         if (entry.isIntersecting) {
-          // double RAF ensures browser has applied initial styles
           requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-              this.renderer.addClass(target, 'in-view');
-            });
+            this.renderer.addClass(target, 'in-view');
+            this.observer!.unobserve(target); 
           });
-        } else {
-          // remove class when leaving viewport so animation replays on re-enter
-          this.renderer.removeClass(target, 'in-view');
         }
       });
     }, options);
 
-    // observe each box
-    boxes.forEach(box => this.observer!.observe(box));
+    boxes.forEach(box => {
+      this.observer!.observe(box);
+      console.log('Observing element:', box); 
+    });
+
+    console.log(`Initialized animation for ${boxes.length} elements`); 
   }
 
   ngOnDestroy(): void {
@@ -53,5 +63,22 @@ export class ServicesSectionComponent implements AfterViewInit, OnDestroy {
       this.observer.disconnect();
       this.observer = null;
     }
+  }
+
+  public triggerAnimations(): void {
+    const boxes = Array.from(this.el.nativeElement.querySelectorAll('.animate-box')) as HTMLElement[];
+    boxes.forEach(box => {
+      this.renderer.removeClass(box, 'in-view');
+      setTimeout(() => {
+        this.renderer.addClass(box, 'in-view');
+      }, 100);
+    });
+  }
+
+  public resetAnimations(): void {
+    const boxes = Array.from(this.el.nativeElement.querySelectorAll('.animate-box')) as HTMLElement[];
+    boxes.forEach(box => {
+      this.renderer.removeClass(box, 'in-view');
+    });
   }
 }
