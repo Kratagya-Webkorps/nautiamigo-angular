@@ -36,23 +36,30 @@ export class AdditionalServicesComponent implements OnInit, AfterViewInit {
     this.initializeScrollAnimations();
   }
 
+  
   initializeScrollAnimations(): void {
     const observer = new IntersectionObserver(
       (entries, obs) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
             const el = entry.target as HTMLElement;
-            el.classList.add('fadeInUp');
-            obs.unobserve(el); // animation runs only once
+            
+            
+            setTimeout(() => {
+              el.classList.add('fadeInUp');
+            }, index * 200); 
+  
+            obs.unobserve(el); 
           }
         });
       },
-      { threshold: 0.2 } // 20% of the element visible triggers it
+      { threshold: 0.2 }
     );
-
+  
     const elements = document.querySelectorAll('.animate-box');
-    elements.forEach(el => observer.observe(el));
+    elements.forEach((el) => observer.observe(el));
   }
+  
 
   onServiceHover(serviceId: number): void {}
 }
