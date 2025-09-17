@@ -618,3 +618,7 @@
 .payments.top-three .primary-button {
   padding: 10px 18px;  
 }
+
+.cruise-card:last-child .payments::before {
+  bottom: 40px; 
+}
