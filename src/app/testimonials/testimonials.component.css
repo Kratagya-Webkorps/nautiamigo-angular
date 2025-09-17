@@ -40,9 +40,9 @@
 }
 
 .testimonial-footer .author-details .rating {
-  color: #ffaa00; 
-  font-size: 14px;
-  margin-bottom: 5px;
+  color: #aa8543; 
+  font-size: 10px;
+  margin-bottom: 10px;
 }
 
 .testimonial-footer .author-details h6 {
@@ -130,7 +130,7 @@
 }
 
 .testimonial-footer .author-details h6 {
-  font-family: "Barlow", sans-serif; 
+  font-family: "Barlow Condensed", sans-serif; 
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;   
@@ -158,7 +158,7 @@
   padding-right: 40px; 
 }
 
-.testimonials .testimonial-content p::after {
+/* .testimonials .testimonial-content p::after {
   content: "”"; 
   font-size: 200px; 
   color: rgba(255, 255, 255, 0.1); 
@@ -166,7 +166,7 @@
   right: 30px;
   bottom: -90px;
   font-family: Georgia, serif;
-}
+} */
 
 
 .testimonials-swiper::part(pagination-bullet) {
@@ -183,5 +183,26 @@
   opacity: 1;
   transform: scale(1.2);
 }
+
+.testimonial-slide {
+  position: relative;  
+}
+
+.quote-mark-img {
+  position: absolute;
+  top: 100px;         
+  left: 550px;
+  width: 70px;       
+  opacity: 0.08;      
+  z-index: 0;         
+  pointer-events: none;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 1; 
+}
+
+
 
 
