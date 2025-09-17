@@ -285,3 +285,45 @@
     letter-spacing: 3px !important;
     color:#ffffff !important; 
   }
+
+
+  /* =========================
+   ANIMATION: slide from edges
+   ========================= */
+
+/* initial state: off-screen + invisible */
+.services .animate-box {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateX(0); /* default baseline — overridden per-direction below */
+  transition: transform 800ms cubic-bezier(.2,.9,.2,1), opacity 600ms ease-out;
+}
+
+/* off-screen positions based on data-attribute */
+.services .animate-box[data-animate-effect="fadeInLeft"] {
+  transform: translateX(-100vw); /* start from extreme left of viewport */
+}
+
+.services .animate-box[data-animate-effect="fadeInRight"] {
+  transform: translateX(100vw); /* start from extreme right of viewport */
+}
+
+/* in-view (final state) */
+.services .animate-box.in-view {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* optional fine-tuning: smaller translate on very small screens */
+@media screen and (max-width: 600px) {
+  .services .animate-box[data-animate-effect="fadeInLeft"],
+  .services .animate-box[data-animate-effect="fadeInRight"] {
+    transform: translateX(80vw);
+  }
+}
+
+/* If you want a little gap before elements become visible, adjust observer rootMargin in TS */
+
+
+  
+ 
