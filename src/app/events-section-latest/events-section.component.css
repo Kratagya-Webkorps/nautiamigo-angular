@@ -54,7 +54,7 @@
   background: #222;
   padding: 0;
   border-radius: 6px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .event-box img {
@@ -78,9 +78,9 @@
   line-height: 1.5;
 }
 
-.events {
+/* .events {
   height: 1050px;          
-}
+} */
 
 .contact-info {
   display: flex;
@@ -123,6 +123,7 @@
   font-family: "Barlow", sans-serif;
   color: #aa8453;
 }
+
 swiper-slide {
   position: relative; 
   height: 880px; 
@@ -191,7 +192,7 @@ swiper-slide {
 }
 
 .events-right .event-box:first-child {
-  height: 590px;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -290,13 +291,14 @@ swiper-slide {
 
 .event-box {
   width: 350px;          
-  height: 760px;         
+  height: auto;         
   display: flex;
   flex-direction: column;
   background: #111;      
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #2b2b2b;      
 }
+
 
 .event-box img {
   width: 100%;
@@ -330,6 +332,9 @@ swiper-slide {
   letter-spacing: 0px;
   color: #444444;  
   margin-left: 50px;       
+}
+.events-box{
+  height:fit-content;
 }
 
 
