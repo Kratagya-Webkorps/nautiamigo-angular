@@ -2,7 +2,7 @@
   background: #1b1b1b;
   color: #fff;
   padding: 60px 0;
-  height:1080px;
+  height:auto;
 }
 
 .events-grid {
@@ -41,6 +41,7 @@
 
 .contact-info i {
   margin-right: 10px;
+
   font-size: 20px;
 }
 
@@ -54,7 +55,7 @@
   background: #222;
   padding: 0;
   border-radius: 6px;
-  /* overflow: hidden; */
+  
 }
 
 .event-box img {
@@ -78,9 +79,6 @@
   line-height: 1.5;
 }
 
-/* .events {
-  height: 1050px;          
-} */
 
 .contact-info {
   display: flex;
@@ -244,7 +242,7 @@ swiper-slide {
   color: #aa8453;
 }
 .events-swiper {
-  height: 100%;     
+  height: auto;     
   width: 65%;       
   margin-left: 470px; 
   margin-top: -200px;
@@ -267,17 +265,14 @@ swiper-slide {
   grid-template-columns: repeat(2, 350px); 
   gap: 30px;
   justify-content: start; 
+  align-items: stretch;
 }
 
 .event-box {
   width: 350px;   
 }
 
-.event-box img {
-  width: 350px;   
-  height: 200px; 
-  object-fit: cover;
-}
+
 .events-right .event-box:first-child img {
   height: 590px;   
   width: 350px;
@@ -295,7 +290,6 @@ swiper-slide {
   display: flex;
   flex-direction: column;
   background: #111;      
-  /* overflow: hidden; */
   background-color: #2b2b2b;      
 }
 
@@ -309,7 +303,7 @@ swiper-slide {
 .event-box .event-text {
   flex: 1;               
   padding: 20px;
-  overflow-y: auto;      
+  overflow: visible;
 }
 
 .event-text h3 {
