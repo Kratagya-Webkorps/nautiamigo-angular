@@ -210,6 +210,10 @@ background-color: #aa8453;
   color: #adadad;
   border: 1px solid #282828;
   border-radius: 0px;
+  appearance: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-image: none !important;
 }
 .footer-language select option {
   color: #fff;
