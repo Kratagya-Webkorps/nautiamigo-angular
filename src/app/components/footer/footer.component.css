@@ -455,6 +455,24 @@ color: #aa8453;
 .footer-bottom-copy-right a:hover {
   color: #aa8453;
 }
+.footer-phone-icon,
+.whatsapp-float {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-phone-icon:hover,
+.whatsapp-float:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.footer-phone-icon:hover {
+  background-color: #aa8453;
+}
+
+.whatsapp-float:hover {
+  background-color: #aa8453;
+}
 
 
 
