@@ -122,7 +122,7 @@ transition: all 500ms ease;
 }
 .footer-explore-list li a:hover {
 padding-left: 15px;
-color: #aa8453;
+color: #adadad;
 }
 .footer-explore-list li a:before {
 position: absolute;
@@ -132,7 +132,7 @@ bottom: 0;
 width: 6px;
 height: 6px;
 content: "";
-background-color: #aa8453;
+background-color: #adadad;
 -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
 opacity: 0;
@@ -410,7 +410,7 @@ color: #aa8453;
   width: 6px;
   height: 6px;
   content: "";
-  background-color: #aa8453;
+  background-color: #adadad;
   transform: translateY(-50%);
   opacity: 1; 
   border-radius: 50%;
