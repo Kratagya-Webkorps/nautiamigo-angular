@@ -1,120 +1,45 @@
 <section class="testimonials">
-    <div
-      class="background bg-img bg-fixed section-padding pb-0"
-      style="background-image: url('assets/img/slider/2.jpg')"
-    >
+  <div
+    class="background bg-img bg-fixed section-padding pb-0"
+    style="background-image: url('assets/img/slider/2.jpg')"
+  >
     <div class="custom-line"></div>
-      <div class="container">
-        <div class="hero-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-        <div class="row">
-          <!-- Reservation Info -->
-          <div class="col-md-5 mb-30 mt-30">
-            <p>
-              <i class="star-rating"></i><i class="star-rating"></i>
-              <i class="star-rating"></i><i class="star-rating"></i>
-              <i class="star-rating"></i>
-            </p>
-            <h5 class="text-content">
-              Experience ultimate luxury aboard a Triple-Deck VIP Cruise, featuring an AC Deck with VIP Lounge, a Private Jetty with Waiting Lounge, and an Open-to-Sky Dance Floor. Enjoy a Reserved Private Table for your family and unmatched comfort throughout your journey.
-            </h5>
-            <div class="reservations mb-30">
-              <div class="icon color-1">
-                
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div class="text">
-                <p class="color-1">Reservation</p>
-                <a class="color-1" href="tel:932-410-5081">932 410 5081</a>
-              </div>
+    <div class="container">
+      <div class="hero-stars" role="img" aria-label="5 out of 5 stars">
+        {{ heroStars }}
+      </div>
+      <div class="row">
+        <!-- Reservation Info -->
+        <div class="col-md-5 mb-30 mt-30">
+          <p>
+            <i class="star-rating" *ngFor="let star of [1,2,3,4,5]"></i>
+          </p>
+          <h5 class="text-content">{{ cruiseDescription }}</h5>
+
+          <div class="reservations mb-30">
+            <div class="icon color-1">
+              <i class="fa-solid fa-phone"></i>
             </div>
-            <p class="call"> 
-              <i class="fa-solid fa-check"></i><small>Call us, it's free.</small>
-            </p>
+            <div class="text">
+              <p class="color-1">{{ reservationLabel }}</p>
+              <a class="color-1" [href]="'tel:' + reservationPhone">{{ reservationPhone }}</a>
+            </div>
           </div>
-  
-          <!-- Booking Form -->
-          <div class="col-md-5 offset-md-2">
-            <div class="booking-form">
+
+          <p class="call">
+            <i class="fa-solid fa-check"></i>
+            <small>{{ callText }}</small>
+          </p>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="col-md-5 offset-md-2">
+          <div class="booking-form">
             <div class="head-box text-center mb-3">
-              <h6>Nauti Amigo Luxury Cruise</h6>
-              <h4>Cruise Enquiry Form</h4>
+              <h6>{{ bookingFormHeading1 }}</h6>
+              <h4>{{ bookingFormHeading2 }}</h4>
             </div>
-            <!-- <div class="booking-box box">
-              <div class="booking-inner clearfix">
-                <form class="form1 clearfix">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input1_wrapper">
-                        <div class="input10_inner">
-                          <input
-                            type="text"
-                            placeholder="Name"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="input1_wrapper">
-                        <div class="input1_inner">
-  
-                        
-                        <input
-                          type="date"
-                          class="form-control date-input"
-                          [(ngModel)]="selectedDate"
-                          name="activityDate"
-                          [attr.min]="today"
-                          data-placeholder="Activity Date"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                   <div class="col-md-12">
-                      <div class="input1_wrapper">
-                        <div class="input10_inner">
-                          <input
-                            type="text"
-                            placeholder="Phone Number"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                      <div class="select1_wrapper">
-                        <div class="select1_inner">
-                          <select class="form-control">
-                            <option value="0">Adults</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="select1_wrapper">
-                        <div class="select1_inner">
-                          <select class="form-control">
-                            <option value="0">Children</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <button type="submit" class="btn-form1-submit mt-15">
-                        Check Availability
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div> -->
+
             <div class="booking-box box">
               <div class="booking-inner clearfix">
                 <form class="form1 clearfix">
@@ -123,20 +48,20 @@
                     <div class="col-md-12">
                       <div class="input1_wrapper">
                         <div class="input10_inner">
-                          <input type="text" placeholder="Name" />
+                          <input type="text" [placeholder]="inputPlaceholders.name" />
                         </div>
                       </div>
                     </div>
-            
+
                     <!-- Phone Number -->
                     <div class="col-md-12">
                       <div class="input1_wrapper">
                         <div class="input10_inner">
-                          <input type="text" placeholder="Phone Number" />
+                          <input type="text" [placeholder]="inputPlaceholders.phone" />
                         </div>
                       </div>
                     </div>
-            
+
                     <!-- Activity Date -->
                     <div class="col-md-12">
                       <div class="input1_wrapper">
@@ -147,80 +72,74 @@
                             [(ngModel)]="selectedDate"
                             name="activityDate"
                             [attr.min]="today"
-                            data-placeholder="Activity Date"
+                            [attr.data-placeholder]="inputPlaceholders.date"
                           />
                         </div>
                       </div>
                     </div>
-            
+
                     <!-- Adults -->
                     <div class="col-md-6">
                       <div class="select1_wrapper">
                         <div class="select1_inner">
                           <select class="form-control">
-                            <option value="0">Adults</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="0">{{ inputPlaceholders.adults }}</option>
+                            <option *ngFor="let n of [1,2,3,4]" [value]="n">{{ n }}</option>
                           </select>
                         </div>
                       </div>
                     </div>
-            
+
                     <!-- Children -->
                     <div class="col-md-6">
                       <div class="select1_wrapper">
                         <div class="select1_inner">
                           <select class="form-control">
-                            <option value="0">Children</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="0">{{ inputPlaceholders.children }}</option>
+                            <option *ngFor="let n of [1,2,3,4]" [value]="n">{{ n }}</option>
                           </select>
                         </div>
                       </div>
                     </div>
-            
+
                     <!-- Submit Button -->
                     <div class="col-md-12">
                       <button type="submit" class="btn-form1-submit mt-15">
-                        Check Availability
+                        {{ submitButtonText }}
                       </button>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            
-          </div>
+
           </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  <!-- Clients -->
-  <section class="clients">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-          <swiper-container
-            slides-per-view="4"
-            space-between="30"
-            loop="true"
-            autoplay-delay="3000"
-            autoplay-disable-on-interaction="false"
-            class="clients-swiper"
-          >
-            <swiper-slide *ngFor="let client of clients">
-              <div class="clients-logo">
-                <a href="#"><img [src]="client.src" [alt]="client.alt" /></a>
-              </div>
-            </swiper-slide>
-          </swiper-container>
-        </div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <swiper-container
+          slides-per-view="4"
+          space-between="30"
+          loop="true"
+          autoplay-delay="3000"
+          autoplay-disable-on-interaction="false"
+          class="clients-swiper"
+        >
+          <swiper-slide *ngFor="let client of clients">
+            <div class="clients-logo">
+              <a href="#"><img [src]="client.src" [alt]="client.alt" /></a>
+            </div>
+          </swiper-slide>
+        </swiper-container>
       </div>
     </div>
-  </section>
+  </div>
+</section>
