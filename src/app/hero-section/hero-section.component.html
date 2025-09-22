@@ -1,71 +1,54 @@
 <header class="header slider-fade">
+  <!-- Custom navigation dots -->
   <div class="custom-nav">
-    <span class="nav-btn" data-slide="0">1</span>
-    <span class="nav-btn" data-slide="1">2</span>
-    <span class="nav-btn" data-slide="2">3</span>
+    <span 
+      class="nav-btn" 
+      *ngFor="let slide of slides; let i = index" 
+      [attr.data-slide]="i">
+      {{ i + 1 }}
+    </span>
   </div>
 
   <!-- Swiper -->
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
-      
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <div class="item bg-img img1 d-flex justify-content-center align-items-center" [attr.data-overlay-dark]="2" [style.backgroundImage]="'url(assets/img/slider/1.jpeg)'">
-          <div class="slide-content text-center w-100">
-            <div class="stars mb-4">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            </div>
-            <div class="slide-subtitle">EXPERIENCE THE LUXARY</div>
-            <div class="slide-title">ENJOY A LUXARY EXPERIENCE</div>
-            <a class="offer-btn" href="#" data-scroll-nav="1"><span>Our Offerings</span></a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="item bg-img img2 d-flex justify-content-center align-items-center" [attr.data-overlay-dark]="2" [style.backgroundImage]="'url(assets/img/slider/4.jpeg)'">
-          <div class="slide-content text-center w-100">
-            <div class="stars mb-4">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-            </div>
-            <div class="slide-subtitle">UNIQUE PLACE TO RELAX AND ENJOY</div>
-            <div class="slide-title">THE PERFECT BASE FOR YOU</div>
-            <a class="offer-btn" href="#" data-scroll-nav="1"><span>Our Offerings</span></a>
-          </div>
-        </div>
-      </div>
+      <!-- Slides loop -->
+      <div class="swiper-slide" *ngFor="let slide of slides">
+        <div 
+          class="item bg-img d-flex justify-content-center align-items-center"
+          [attr.data-overlay-dark]="2"
+          [style.backgroundImage]="'url(' + slide.background + ')'">
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <div class="item bg-img img3 d-flex justify-content-center align-items-center" [attr.data-overlay-dark]="3" [style.backgroundImage]="'url(assets/img/slider/6.jpeg)'">
           <div class="slide-content text-center w-100">
             <div class="stars mb-4">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              <span class="star" *ngFor="let star of [].constructor(slide.stars)">★</span>
             </div>
-            <div class="slide-subtitle">THE ULTIMATE LUXURY EXPERIENCE</div>
-            <div class="slide-title">ENJOY THE BEST MOMENTS OF LIFE</div>
-            <a class="offer-btn" href="#" data-scroll-nav="1"><span>Our Offerings</span></a>
+            <div class="slide-subtitle">{{ slide.subtitle }}</div>
+            <div class="slide-title">{{ slide.title }}</div>
+            <a class="offer-btn" [href]="slide.buttonLink" data-scroll-nav="1">
+              <span>{{ slide.buttonText }}</span>
+            </a>
           </div>
         </div>
       </div>
 
     </div>
-    
+
     <!-- Navigation buttons -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
 
-  <!-- slider reservation -->
+  <!-- Reservation -->
   <div class="reservation">
-    <a href="tel:9324105081">
+    <a [href]="'tel:' + reservationPhone">
       <div class="icon d-flex justify-content-center align-items-center">
         <i class="fas fa-phone"></i>
       </div>
-      <div class="call"><span>932 410 5081</span> <br />Reservation</div>
+      <div class="call">
+        <span>{{ reservationPhone }}</span> <br />{{ reservationText }}
+      </div>
     </a>
   </div>
-  
 </header>
