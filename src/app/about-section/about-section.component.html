@@ -1,0 +1,39 @@
+<section class="about section-padding">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-6 mb-30 animate-box"
+        data-animate-effect="fadeInUp"
+      >
+        <div class="star-wrapper">
+          <i class="star-rating" *ngFor="let star of stars"></i>
+        </div>
+        <div class="section-subtitle cruise-highlight">{{ sectionSubtitle }}</div>
+        <div class="section-title">{{ sectionTitle }}</div>
+        <div class="barlow-description">
+          <div class="section-sub-title">
+            <p *ngFor="let paragraph of descriptionParagraphs">
+              {{ paragraph }}
+            </p>
+          </div>
+        </div>
+        
+        <div class="res">
+          <div class="reservations">
+            <div class="fas fa-phone-volume phone-icon"></div>
+            <div class="text">
+              <p>{{ reservationText }}</p>
+              <a [href]="phoneLink" class="phone-highlight">{{ phoneNumber }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+        <img [src]="images.first.src" [alt]="images.first.alt" class="mt-90 mb-30" />
+      </div>
+      <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+        <img [src]="images.second.src" [alt]="images.second.alt" />
+      </div>
+    </div>
+  </div>
+</section>

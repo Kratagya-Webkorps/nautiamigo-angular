@@ -1,0 +1,105 @@
+
+@import "swiper/css";
+
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar"; 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.hero-swiper,
+.hero-swiper .swiper-wrapper,
+.hero-swiper .swiper-slide,
+.hero-swiper .item {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/*events swiper*/
+ swiper-container.events-swiper {
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  
+  --swiper-pagination-color: transparent !important;                
+  --swiper-pagination-bullet-inactive-color: transparent !important;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-theme-color: transparent !important;                    
+}
+
+swiper-container.events-swiper::part(bullet) {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+
+swiper-container.events-swiper::part(bullet-active) {
+  border: 2px solid #aa8453 !important;  
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #aa8453 !important;   
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}
+
+
+/* For testimonials swiper */
+swiper-container.testimonials-swiper {
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  
+  --swiper-pagination-color: transparent !important;                
+  --swiper-pagination-bullet-inactive-color: transparent !important;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-theme-color: transparent !important;                    
+}
+
+swiper-container.testimonials-swiper::part(bullet) {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+swiper-container.testimonials-swiper::part(bullet-active) {
+  border: 2px solid #aa8453 !important;  
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}
+
+
+.testimonials-swiper .swiper-pagination-bullet {
+  border: 2px solid #adadad !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  border: 2px solid #aa8453 !important;   
+  background: #aa8453 !important;        
+  opacity: 1 !important;
+}

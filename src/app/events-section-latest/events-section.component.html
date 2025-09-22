@@ -1,0 +1,41 @@
+<section class="events">
+  <div class="container">
+    <h6 class="heading">{{ heading }}</h6>
+    <h2 class="sub-heading">{{ subHeading }}</h2>
+    <div class="underline"></div>
+
+    <div class="events-left">
+      <p *ngFor="let para of leftParagraphs">{{ para }}</p>
+    </div>
+
+    <div class="contact-info">
+      <i class="fas fa-phone"></i>
+      <div class="contact-text">
+        <span class="info-label">{{ contact.label }}</span>
+        <span class="phone-number">{{ contact.phone }}</span>
+      </div>
+    </div>
+
+    <swiper-container
+      class="events-swiper"
+      pagination="true"
+      pagination-clickable="true"
+      space-between="30"
+      slides-per-view="1"
+      loop="false"
+      autoplay="false"
+    >
+      <swiper-slide *ngFor="let slide of slides">
+        <div class="events-right">
+          <div class="event-box" *ngFor="let event of slide.events">
+            <img [src]="event.image" [alt]="event.title" />
+            <div class="event-text">
+              <h3>{{ event.title }}</h3>
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</section>

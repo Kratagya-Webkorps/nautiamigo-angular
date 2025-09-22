@@ -1,0 +1,104 @@
+<header class="site-header">
+  <h1 class="brand-name">{{ content.brandName }}</h1>
+  <h2 class="section-title">{{ content.sectionTitle }}</h2>
+</header>
+
+<div class="packages-section">
+  <div class="packages-container">
+    <div class="packages-row top">
+      <div class="package-item" *ngFor="let package of topPackages">
+        <img class="package-img" [src]="package.image" [alt]="package.name">
+        <a 
+          class="book-button" 
+          [href]="content.phoneLink"
+        >
+          {{ content.bookButtonText }}
+        </a>
+        <div class="package-overlay">
+          <div class="package-price">{{ package.price }}</div>
+          <div class="package-name">{{ package.name }}</div>
+          <div class="package-line"></div>
+          <a 
+            class="package-details" 
+            [href]="content.whatsappLink" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ content.detailsText }} <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          
+          <div class="package-icons" aria-hidden="false">
+            <i 
+              class="fa-solid fa-utensils" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.dining"
+            ></i>
+            <i 
+              class="fa-solid fa-cocktail" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.drinks"
+            ></i>
+            <i 
+              class="fa-solid fa-music" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.music"
+            ></i>
+            <i 
+              class="fa-solid fa-wifi" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.wifi"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="packages-row bottom">
+      <div class="bottom-package-item" *ngFor="let package of bottomPackages">
+        <img class="package-img" [src]="package.image" [alt]="package.name">
+        <a 
+          class="book-button-bottom" 
+          [href]="content.phoneLink"
+        >
+          {{ content.bookButtonText }}
+        </a>
+        <div class="bottom-content">
+          <div class="bottom-price">{{ package.price }}</div>
+          <div class="bottom-title">{{ package.name }}</div>
+        </div>
+        <div class="bottom-line"></div>
+        <a 
+          class="package-details" 
+          [href]="content.whatsappLink" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ content.detailsText }} <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        
+        <div class="package-icons" aria-hidden="false">
+          <i 
+            class="fa-solid fa-utensils" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.dining"
+          ></i>
+          <i 
+            class="fa-solid fa-cocktail" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.drinks"
+          ></i>
+          <i 
+            class="fa-solid fa-music" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.music"
+          ></i>
+          <i 
+            class="fa-solid fa-wifi" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.wifi"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

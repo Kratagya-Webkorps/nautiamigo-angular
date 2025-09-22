@@ -1,0 +1,78 @@
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-4">
+          <div class="footer-column footer-about">
+            <h3 class="footer-title">{{ aboutTitle }}</h3>
+            <p class="footer-about-text">{{ aboutText }}</p>
+
+            <div class="footer-language">
+              <i class="fas fa-globe"></i>
+              <select #languageSelect (change)="redirectTo(languageSelect.value)">
+                <option *ngFor="let lang of languages" [value]="lang.value">{{ lang.name }}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Explore Section -->
+        <div class="col-md-3 offset-md-1">
+          <div class="footer-column footer-explore clearfix">
+            <h3 class="footer-title">{{ exploreTitle }}</h3>
+            <ul class="footer-explore-list list-unstyled">
+              <li *ngFor="let link of exploreLinks">
+                <a [href]="link.url">{{ link.label }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-md-4">
+          <div class="footer-column footer-contact">
+            <h3 class="footer-title">{{ contactTitle }}</h3>
+            <p class="footer-contact-text">{{ contactAddress }}</p>
+            <div class="footer-contact-info">
+              <p class="footer-contact-phone">
+                <span class="fas fa-phone"></span> {{ contactPhone }}
+              </p>
+              <p class="footer-contact-mail">{{ contactEmail }}</p>
+            </div>
+
+            <div class="footer-social-icons">
+              <a *ngFor="let social of socialLinks" [href]="social.url" class="social-icon">
+                <i [class]="social.icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-bottom-inner">
+            <p class="footer-bottom-copy-right">
+              {{ copyRight }} <a [href]="copyRightUrl">www.nautiamigo.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Icons -->
+  <a [href]="'tel:' + contactPhone" class="footer-phone-icon" target="_blank" title="Call Us">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  <a [href]="'https://wa.me/+91' + contactPhone" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</footer>

@@ -1,0 +1,487 @@
+.footer-phone-icon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #aa8453;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .footer-phone-icon:hover {
+    background-color: #aa8453;
+  }
+
+  
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #aa8453; 
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #8a6c3f; 
+    transform: scale(1.1);
+  }
+
+  .whatsapp-float i {
+    margin-top: 3px;
+    color: #fff !important;   
+  }
+
+  .footer {
+position: relative;
+display: block;
+}
+.footer-top {
+position: relative;
+display: block;
+background-color: #222;
+padding: 90px 0 60px 0;
+z-index: 1;
+}
+.footer-top .footer-column {
+  margin-bottom: 30px;
+}
+.footer-title {
+font-size: 24px;
+color: #fff;
+margin-bottom: 20px;
+}
+.footer-about-text {
+font-size: 15px;
+color: #adadad;
+margin: 0;
+}
+.footer-about-social-list {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+margin-top: 20px;
+}
+.footer-about-social-list a {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+    align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+    justify-content: center;
+text-align: center;
+color: #fff;
+font-size: 15px;
+background-color: transparent;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-about-social-list a + a {
+margin-left: 15px;
+}
+.footer-about-social-list a:hover {
+background-color: transparent;
+color: #aa8453;
+}
+.footer-explore-list li + li {
+margin-top: 3px;
+}
+.footer-explore-list li a {
+position: relative;
+display: block;
+font-size: 15px;
+color: #adadad;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-explore-list li a:hover {
+padding-left: 15px;
+color: #adadad;
+}
+.footer-explore-list li a:before {
+position: absolute;
+top: 55%;
+left: 0;
+bottom: 0;
+width: 6px;
+height: 6px;
+content: "";
+background-color: #adadad;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+opacity: 0;
+border-radius: 50%;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-explore-list li a:hover:before {
+opacity: 1;
+}
+.footer-contact {
+position: relative;
+display: block;
+}
+.footer-contact .footer-title {
+margin-bottom: 20px;
+}
+.footer-contact-text {
+font-size: 15px;
+margin: 0;
+color: #adadad;
+padding-bottom: 20px;
+}
+.footer-contact-info p {
+margin: 0;
+}
+.footer-contact-phone {
+font-size: 24px;
+color: #fff;
+font-weight: 400;
+display: block;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-contact-phone:hover {
+color: #fff;
+}
+.footer-contact-mail {
+font-size: 15px;
+line-height: 3em;
+color: #fff;
+position: relative;
+display: inline-block;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-contact-mail:hover {
+color: #fff;
+}
+
+.footer-contact-mail:hover:before {
+background-color: #aa8453;
+}
+
+
+
+.footer-language {
+  width: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 30px;
+}
+.footer-language i {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  font-size: 15px;
+  opacity: 0.6;
+  color: #adadad;
+}
+.footer-language select {
+  height: 50px;
+  background: #282828;
+  color: #adadad;
+  border: 1px solid #282828;
+  border-radius: 0px;
+  appearance: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-image: none !important;
+}
+.footer-language select option {
+  color: #fff;
+}
+select {
+  width: 160px;
+  max-width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  border: 1px solid #adadad;
+  color: #adadad;
+}
+
+
+.footer-bottom {
+position: relative;
+display: block;
+background-color: #1b1b1b;
+-webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05);
+        box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05);
+padding: 32px 0;
+}
+.footer-bottom-inner {
+position: relative;
+display: block;
+text-align: center;
+}
+.footer-bottom-copy-right {
+font-size: 12px;
+color: #adadad;
+margin: 0;
+}
+.footer-bottom-copy-right a {
+color: #fff;
+-webkit-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+.footer-bottom-copy-right a:hover {
+color: #aa8453;
+}
+
+.footer-title {
+  font-family: 'Gilda Display', serif; 
+  font-weight: 400;                    
+  font-size: 24px;                     
+  line-height: 30px;                   
+  letter-spacing: 0px;                 
+  color: #ffffff;                      
+  margin-bottom: 20px;
+}
+
+.footer-about-text {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 26.3px;                
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  margin: 0;
+}
+
+.footer-explore-list li a {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 24px;                  
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  position: relative;
+  display: block;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.footer-explore-list li a:hover {
+  padding-left: 15px;
+  color: #aa8453; 
+}
+
+.footer-contact-text {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 15px;                    
+  line-height: 26.3px;                
+  letter-spacing: 0px;                
+  color: #adadad;                     
+  margin: 0;
+  padding-bottom: 20px;               
+}
+.footer-contact-phone {
+  font-family: 'Barlow', sans-serif;  
+  font-weight: 400;                   
+  font-size: 24px;                    
+  line-height: 42px;                  
+  letter-spacing: 0px;                
+  color: #ffffff;                     
+  display: flex;                      
+  align-items: center;                
+}
+
+.footer-contact-phone .fas {
+  margin-right: 2px;   
+  color: #aa8453;      
+  font-size: 22px;     
+}
+
+.footer-contact-mail {
+  font-family: 'Barlow', sans-serif !important;  
+  font-weight: 400 !important;                   
+  font-size: 15px !important;                    
+  line-height: 45px !important;                  
+  letter-spacing: 0px !important;                
+  color: #ffffff !important;                     
+  display: flex;                                 
+  align-items: center;                           
+}
+
+.footer-contact-mail .fas {
+  margin-right: 8px;   
+  color: #aa8453;      
+  font-size: 18px;     
+}
+
+.footer-contact-mail {
+  font-family: 'Barlow', sans-serif !important;  
+  font-weight: 400 !important;                   
+  font-size: 15px !important;                    
+  line-height: 45px !important;                  
+  letter-spacing: 0px !important;                
+  color: #ffffff !important;                     
+  display: inline-block; 
+  position: relative; 
+}
+
+.footer-contact-mail:before {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #aa8453;
+  content: "";
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+/**/
+/* FontAwesome Social Icons Styling */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #aa8453;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.social-icon:hover {
+  background-color: #aa8453;
+  color: #fff;
+  
+}
+
+.social-icon i {
+  color: inherit;
+}
+
+
+
+.footer-contact-mail .fas {
+  margin-right: 8px;   
+  color: #aa8453;      
+  font-size: 16px;     
+}
+
+.footer-explore-list li a:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  content: "";
+  background-color: #adadad;
+  transform: translateY(-50%);
+  opacity: 1; 
+  border-radius: 50%;
+  transition: all 500ms ease;
+}
+
+.footer-explore-list li a {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #adadad;
+  transition: all 500ms ease;
+  padding-left: 15px; 
+}
+
+.footer-explore-list li a:hover {
+  padding-left: 20px; 
+  color: #aa8453;
+}
+
+.footer-explore-list li a:hover:before {
+  left: 5px; 
+}
+
+.footer-bottom-copy-right {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400; 
+  font-size: 12px;
+  line-height: 21px; 
+  letter-spacing: 0px;
+  color: #adadad;
+  margin: 0;
+}
+
+.footer-bottom-copy-right a {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.footer-bottom-copy-right a:hover {
+  color: #aa8453;
+}
+.footer-phone-icon,
+.whatsapp-float {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-phone-icon:hover,
+.whatsapp-float:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.footer-phone-icon:hover {
+  background-color: #aa8453;
+}
+
+.whatsapp-float:hover {
+  background-color: #aa8453;
+}
+
+
+
+
+
+
+
+

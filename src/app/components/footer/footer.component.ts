@@ -1,0 +1,46 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
+})
+export class FooterComponent {
+  redirectTo(url: string) {
+    window.location.href = url;
+  }
+  aboutTitle = 'About Nauti Amigo';
+  aboutText = `We are the biggest club in town Goa’s Luxury Premium Cruise Boat comes with the VVIP Lounge area, 
+               which offers the highest level of luxury & comfort.`;
+
+  languages = [
+    { name: 'English', value: 'https://nautiamigo.com/' },
+    { name: 'German', value: 'https://nautiamigo.com/' }
+  ];
+
+  exploreTitle = 'Explore';
+  exploreLinks = [
+    { label: 'Home', url: 'index.html' },
+    { label: 'About Us', url: '#' },
+    { label: 'Services', url: '#' },
+    { label: 'Contact Us', url: '#' }
+  ];
+
+  contactTitle = 'Contact';
+  contactAddress = '123/1, MARINHA DOURADA RD, TAMUDKI VADO, ARPORA, BAGA, GOA - 403518';
+  contactPhone = '9324105081';
+  contactEmail = 'salesnautiamigo.com';
+
+  socialLinks = [
+    { icon: 'fab fa-instagram', url: '#' },
+    { icon: 'fab fa-twitter', url: '#' },
+    { icon: 'fab fa-youtube', url: '#' },
+    { icon: 'fab fa-facebook-f', url: '#' }
+  ];
+
+  copyRight = '© Copyright 2025 by';
+  copyRightUrl = 'https://nautiamigo.com/';
+}
