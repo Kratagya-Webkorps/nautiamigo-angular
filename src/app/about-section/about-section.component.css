@@ -312,6 +312,7 @@
     letter-spacing: -1px; 
     color: #aa8453 !important;
     text-transform: uppercase;
+    font-weight: 400 !important;
     
   
   }
@@ -357,4 +358,5 @@
     top: 450px;   
     left: 5px;   
   }
+
   
