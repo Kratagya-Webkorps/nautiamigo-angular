@@ -9,6 +9,12 @@
       <div class="package-item" *ngFor="let package of topPackages">
         <img class="package-img" [src]="package.image" [alt]="package.name">
         <button class="book-button" >BOOK</button>
+        <a 
+        class="book-button" 
+        href="tel:+919324105081"
+        >
+          BOOK
+        </a>
         <div class="package-overlay">
           <div class="package-price">{{ package.price }}</div>
           <div class="package-name">{{ package.name }}</div>
@@ -38,8 +44,12 @@
     <div class="packages-row bottom">
       <div class="bottom-package-item" *ngFor="let package of bottomPackages">
         <img class="package-img" [src]="package.image" [alt]="package.name">
-        
-        <button class="book-button-bottom">BOOK</button>
+        <a 
+        class="book-button-bottom" 
+        href="tel:+919324105081"
+        >
+          BOOK
+        </a>
         <div class="bottom-content">
         <div class="bottom-price">{{ package.price }}</div>
         <div class="bottom-title">{{ package.name }}</div>

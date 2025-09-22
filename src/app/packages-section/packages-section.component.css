@@ -602,3 +602,28 @@
   transform: translateX(5px); 
 }
 
+.book-button,
+.book-button-bottom {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none; /* important for links */
+  padding: 5px 10px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  background: none;
+  border: 1px solid #968F8B;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.book-button:hover,
+.book-button-bottom:hover {
+  background-color: #AA8453;
+  border-color: #AA8453;
+}
+
