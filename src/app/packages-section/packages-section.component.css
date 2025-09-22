@@ -367,6 +367,17 @@
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.package-details:hover {
+  color: #aa8543; /* golden yellow */
+}
+
+.package-details:hover i.fa-arrow-right {
+  color: #aa8543; /* make the arrow golden too */
+  transform: translateX(5px); /* optional sliding effect on hover */
 }
 
 
@@ -575,5 +586,19 @@
 
 .bottom-package-item:hover .bottom-line {
   width: calc(100% - 50px); 
+}
+
+
+
+.package-details i.fa-arrow-right {
+  margin-left: 5px; 
+}
+.bottom-package-item .package-details:hover {
+  color: #aa8543; 
+}
+
+.bottom-package-item .package-details:hover i.fa-arrow-right {
+  color: #aa8543; 
+  transform: translateX(5px); 
 }
 
