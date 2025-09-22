@@ -8,6 +8,21 @@ interface Package {
   image: string;
 }
 
+interface PageContent {
+  brandName: string;
+  sectionTitle: string;
+  bookButtonText: string;
+  detailsText: string;
+  phoneLink: string;
+  whatsappLink: string;
+  iconTitles: {
+    dining: string;
+    drinks: string;
+    music: string;
+    wifi: string;
+  };
+}
+
 @Component({
   selector: 'app-packages-section',
   standalone: true,
@@ -17,6 +32,22 @@ interface Package {
 })
 export class PackagesSectionComponent {
   
+  // Page content 
+  content: PageContent = {
+    brandName: 'NAUTI AMIGO LUXURY CRUISE',
+    sectionTitle: 'Our Packages',
+    bookButtonText: 'BOOK',
+    detailsText: 'Details',
+    phoneLink: 'tel:+919324105081',
+    whatsappLink: 'https://api.whatsapp.com/send/?phone=919324105081&text&type=phone_number&app_absent=0',
+    iconTitles: {
+      dining: 'Dining',
+      drinks: 'Drinks',
+      music: 'Music',
+      wifi: 'Wi-Fi'
+    }
+  };
+
   topPackages: Package[] = [
     {
       id: 1,
@@ -52,6 +83,4 @@ export class PackagesSectionComponent {
       image: '../../assets/images/3.jpeg'
     }
   ];
-
-
 }

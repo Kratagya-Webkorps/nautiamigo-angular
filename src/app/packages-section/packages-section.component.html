@@ -1,6 +1,6 @@
 <header class="site-header">
-  <h1 class="brand-name">NAUTI AMIGO LUXURY CRUISE</h1>
-  <h2 class="section-title">Our Packages</h2>
+  <h1 class="brand-name">{{ content.brandName }}</h1>
+  <h2 class="section-title">{{ content.sectionTitle }}</h2>
 </header>
 
 <div class="packages-section">
@@ -8,35 +8,47 @@
     <div class="packages-row top">
       <div class="package-item" *ngFor="let package of topPackages">
         <img class="package-img" [src]="package.image" [alt]="package.name">
-        <button class="book-button" >BOOK</button>
         <a 
-        class="book-button" 
-        href="tel:+919324105081"
+          class="book-button" 
+          [href]="content.phoneLink"
         >
-          BOOK
+          {{ content.bookButtonText }}
         </a>
         <div class="package-overlay">
           <div class="package-price">{{ package.price }}</div>
           <div class="package-name">{{ package.name }}</div>
           <div class="package-line"></div>
           <a 
-          class="package-details" 
-          href="https://api.whatsapp.com/send/?phone=919324105081&text&type=phone_number&app_absent=0" 
-          target="_blank"
-          rel="noopener noreferrer"
+            class="package-details" 
+            [href]="content.whatsappLink" 
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          Details <i class="fa-solid fa-arrow-right"></i>
+            {{ content.detailsText }} <i class="fa-solid fa-arrow-right"></i>
           </a>
           
-          <!-- <div class="package-details">Details<i class="fa-solid fa-arrow-right"></i></div> -->
-          
           <div class="package-icons" aria-hidden="false">
-            <i class="fa-solid fa-utensils" aria-hidden="true" title="Dining"></i>
-            <i class="fa-solid fa-cocktail" aria-hidden="true" title="Drinks"></i>
-            <i class="fa-solid fa-music" aria-hidden="true" title="Music"></i>
-            <i class="fa-solid fa-wifi" aria-hidden="true" title="Wi-Fi"></i>
+            <i 
+              class="fa-solid fa-utensils" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.dining"
+            ></i>
+            <i 
+              class="fa-solid fa-cocktail" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.drinks"
+            ></i>
+            <i 
+              class="fa-solid fa-music" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.music"
+            ></i>
+            <i 
+              class="fa-solid fa-wifi" 
+              aria-hidden="true" 
+              [title]="content.iconTitles.wifi"
+            ></i>
           </div>
-
         </div>
       </div>
     </div>
@@ -45,31 +57,46 @@
       <div class="bottom-package-item" *ngFor="let package of bottomPackages">
         <img class="package-img" [src]="package.image" [alt]="package.name">
         <a 
-        class="book-button-bottom" 
-        href="tel:+919324105081"
+          class="book-button-bottom" 
+          [href]="content.phoneLink"
         >
-          BOOK
+          {{ content.bookButtonText }}
         </a>
         <div class="bottom-content">
-        <div class="bottom-price">{{ package.price }}</div>
-        <div class="bottom-title">{{ package.name }}</div>
-      </div>
+          <div class="bottom-price">{{ package.price }}</div>
+          <div class="bottom-title">{{ package.name }}</div>
+        </div>
         <div class="bottom-line"></div>
         <a 
           class="package-details" 
-          href="https://api.whatsapp.com/send/?phone=919324105081&text&type=phone_number&app_absent=0" 
+          [href]="content.whatsappLink" 
           target="_blank"
           rel="noopener noreferrer"
-          >
-          Details <i class="fa-solid fa-arrow-right"></i>
-          </a>
+        >
+          {{ content.detailsText }} <i class="fa-solid fa-arrow-right"></i>
+        </a>
         
-        <!-- <div class="package-details">Details<i class="fa-solid fa-arrow-right"></i></div> -->
         <div class="package-icons" aria-hidden="false">
-          <i class="fa-solid fa-utensils" aria-hidden="true" title="Dining"></i>
-          <i class="fa-solid fa-cocktail" aria-hidden="true" title="Drinks"></i>
-          <i class="fa-solid fa-music" aria-hidden="true" title="Music"></i>
-          <i class="fa-solid fa-wifi" aria-hidden="true" title="Wi-Fi"></i>
+          <i 
+            class="fa-solid fa-utensils" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.dining"
+          ></i>
+          <i 
+            class="fa-solid fa-cocktail" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.drinks"
+          ></i>
+          <i 
+            class="fa-solid fa-music" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.music"
+          ></i>
+          <i 
+            class="fa-solid fa-wifi" 
+            aria-hidden="true" 
+            [title]="content.iconTitles.wifi"
+          ></i>
         </div>
       </div>
     </div>

@@ -190,7 +190,7 @@ swiper-slide {
 }
 
 .events-right .event-box:first-child {
-  height: auto;
+  height: max-content;
   display: flex;
   flex-direction: column;
   overflow: hidden;
