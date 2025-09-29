@@ -1,7 +1,7 @@
 <section class="section-padding">
   <div class="col-md-12 container">
-    <div class="section-subtitle">NAUTI AMIGO Luxury Cruise</div>
-    <div class="section-title">Our Packages</div>
+    <div class="section-subtitle">{{ constants.SECTION_SUBTITLE }}</div>
+    <div class="section-title">{{ constants.SECTION_TITLE }}</div>
 
     <div id="cruise-container">
       <div class="cruise-card" *ngFor="let offer of offers; let i = index">
@@ -50,7 +50,7 @@
 
               <div class="show-full-info">
                 <div class="link link-cursor" (click)="goToService(offer.routingUrl)">
-                  Show inclusions & important info
+                  {{ constants.SHOW_INCLUSIONS_TEXT }}
                   <img src="../../assets/img/images/svg/arrow-ico.svg" alt="" />
                 </div>
               </div>
@@ -60,16 +60,16 @@
             <div class="payments">
               <div class="amount">
                 <h3>
-                  <span class="currency">INR</span>
+                  <span class="currency">{{ constants.CURRENCY }}</span>
                   <span class="price">{{ offer.currentPrice }}</span>
-                  <span class="tag">15% OFF</span>
+                  <span class="tag">{{ constants.DISCOUNT_TAG }}</span>
                 </h3>
               </div>
 
               <div class="flex flex-column mobile-reverse">
                 <div class="button-group">
-                  <button class="primary-button" (click)="callPhone('9324105081')">
-                    Book Now
+                  <button class="primary-button" (click)="callPhone(constants.PHONE_NUMBER)">
+                    {{ constants.BOOK_NOW_BUTTON }}
                   </button>
                 </div>
 
@@ -81,9 +81,9 @@
                 </div>
 
                 <div class="show-full-info">
-                  <div class="whatsapp link link-cursor" (click)="openWhatsApp('+919324105081')">
+                  <div class="whatsapp link link-cursor" (click)="openWhatsApp(constants.WHATSAPP_NUMBER)">
                     <img src="../../assets/img/dinnercruise/whatsapp_icon.png" alt="WhatsApp icon" />
-                    Get more details
+                    {{ constants.GET_MORE_DETAILS_TEXT }}
                     <img src="../../assets/img/images/svg/arrow-ico.svg" alt="" />
                   </div>
                 </div>

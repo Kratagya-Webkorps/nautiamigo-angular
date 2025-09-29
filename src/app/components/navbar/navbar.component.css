@@ -404,3 +404,20 @@
   }
 
   
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1b1b1b;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  .navbar.transparent {
+    background: transparent !important;
+    box-shadow: none;
+  }
+
+  

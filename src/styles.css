@@ -103,3 +103,6 @@ swiper-container.testimonials-swiper::part(bullet-active) {
   background: #aa8453 !important;        
   opacity: 1 !important;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

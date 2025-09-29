@@ -1,4 +1,4 @@
-<section class="testimonials">
+<section class="testimonials" id="contact-us">
   <div
     class="background bg-img bg-fixed section-padding pb-0"
     style="background-image: url('assets/img/slider/2.jpg')"
@@ -42,7 +42,7 @@
 
             <div class="booking-box box">
               <div class="booking-inner clearfix">
-                <form class="form1 clearfix">
+                <form class="form1 clearfix" (ngSubmit)="onSubmit($event)">
                   <div class="row">
                     <!-- Name -->
                     <div class="col-md-12">
@@ -64,19 +64,23 @@
 
                     <!-- Activity Date -->
                     <div class="col-md-12">
-                      <div class="input1_wrapper">
-                        <div class="input1_inner">
-                          <input
-                            type="date"
-                            class="form-control date-input"
-                            [(ngModel)]="selectedDate"
-                            name="activityDate"
-                            [attr.min]="today"
-                            [attr.data-placeholder]="inputPlaceholders.date"
-                          />
-                        </div>
-                      </div>
+                      <mat-form-field appearance="fill" class="date-picker-field">
+                        <mat-label>Activity Date</mat-label>
+                        <input
+                          matInput
+                          [matDatepicker]="picker"
+                          [(ngModel)]="selectedDate"
+                          [min]="today"
+                          name="activityDate"
+                        />
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
                     </div>
+                    
+                    
+                   
+                    
 
                     <!-- Adults -->
                     <div class="col-md-6">

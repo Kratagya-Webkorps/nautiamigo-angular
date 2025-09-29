@@ -1,0 +1,69 @@
+{
+    "section": {
+      "subtitle": "NAUTI AMIGO Luxury Cruise",
+      "title": "ADDITIONAL SERVICES",
+      "cssClasses": {
+        "sectionWrapper": "facilties section-padding",
+        "container": "container",
+        "headingRow": "row",
+        "headingCol": "col-md-12 heading",
+        "servicesRow": "row",
+        "serviceCol": "col-md-4",
+        "facilityBox": "single-facility",
+        "animateBox": "animate-box"
+      }
+    },
+    "services": [
+      {
+        "id": 1,
+        "title": "MEETINGS",
+        "description": "Pickup and Drop available from North Goa specific locations.",
+        "icon": "fas fa-globe",
+        "animationDelay": 0
+      },
+      {
+        "id": 2,
+        "title": "CONFERENCES",
+        "description": "Complimentary drinks are included in the offerings.",
+        "icon": "fas fa-glass-cheers",
+        "animationDelay": 200,
+        "customClass": "conferences"
+      },
+      {
+        "id": 3,
+        "title": "SEMINARS",
+        "description": "Ride will be safe and secure for all the buddies joining.",
+        "icon": "fas fa-chalkboard-teacher",
+        "animationDelay": 400,
+        "customClass": "seminars"
+      },
+      {
+        "id": 4,
+        "title": "FILM SHOOT",
+        "description": "Celebrate Your Last Night of Singledom on a Bachelorette Party Boat in Goa.",
+        "icon": "fas fa-video",
+        "animationDelay": 0
+      },
+      {
+        "id": 5,
+        "title": "BIRTHDAYS",
+        "description": "Renewing your vows? Celebrating a lifetime of love with your husband or wife.",
+        "icon": "fas fa-birthday-cake",
+        "animationDelay": 200
+      },
+      {
+        "id": 6,
+        "title": "FAMILY EVENTS",
+        "description": "Makes sense that you'd want to throw a party for your loved one when it's their turn to move on.",
+        "icon": "fas fa-users",
+        "animationDelay": 400,
+        "customClass": "family-events"
+      }
+    ],
+    "animations": {
+      "intersectionThreshold": 0.2,
+      "staggerDelay": 200,
+      "fadeInClass": "fadeInUp"
+    }
+  }
+  

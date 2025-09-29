@@ -161,7 +161,7 @@ swiper-slide {
   font-size:46px;
   line-height: 57.5px;
   letter-spacing: 0px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   width: 320px;
 }
@@ -280,7 +280,11 @@ swiper-slide {
 }
 
 .events-right .event-box:nth-child(2) img {
-  height: 206px;   
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box; 
   width: 350px;
 }
 
@@ -329,6 +333,12 @@ swiper-slide {
 }
 .events-box{
   height:fit-content;
+}
+
+.events-right .event-box:nth-child(2) {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
 }
 
 

@@ -336,3 +336,64 @@
 .services .animate-box {
   border: 2px solid transparent; 
 }
+
+@keyframes softFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes softFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);  
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.soft-fade-left {
+  animation: softFadeInLeft 2s ease forwards;
+}
+
+.soft-fade-right {
+  animation: softFadeInRight 2s ease forwards;
+}
+
+.services .butn-dark a:hover {
+  background-color: #3B3B3B !important; 
+  color: #ffffff !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.services .butn-dark a {
+  background: linear-gradient(90deg, #3B3B3B 0%, #3B3B3B 50%, #AA8453 50%, #AA8453 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  color: #ffffff !important;
+  padding: 15px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: background-position 0.3s ease;
+  display: inline-block;
+}
+
+.services .butn-dark a:hover {
+  background-position: 0% 0;
+  color: #ffffff !important;
+  text-decoration: none;
+  cursor: pointer;
+}

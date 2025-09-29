@@ -1,0 +1,147 @@
+{
+    "section": {
+      "cssClasses": {
+        "wrapper": "services section-padding",
+        "container": "container",
+        "row": "row",
+        "animateBox": "animate-box",
+        "backgroundDark": "bg-darkblack",
+        "valign": "valign",
+        "padding": "p-0",
+        "content": "content",
+        "contentInner": "cont text-left",
+        "textAlign": "text-left",
+        "info": "info",
+        "categoryClass": "barlow-condensed",
+        "titleClass": "gilda-display",
+        "descriptionClass": "barlow-description",
+        "buttonWrapper": "butn-dark",
+        "button": "",
+        "buttonSpan": ""
+      }
+    },
+    "services": [
+      {
+        "id": 1,
+        "image": {
+          "src": "../../assets/service-section-images/1.jpeg",
+          "alt": "Nauti Amigo Cruise Experience",
+          "link": "#"
+        },
+        "content": {
+          "category": "Discover",
+          "title": "Nauti Amigo Cruise",
+          "description": "We take pride in being the biggest club in town! Goa's premier luxury cruise boat features a VVIP Lounge, offering unmatched comfort and exclusivity. Indulge in the ultimate luxury experience with private access to the most scenic views.",
+          "buttonText": "Learn More",
+          "buttonLink": "#"
+        },
+        "layout": {
+          "imagePosition": "left",
+          "animationEffect": {
+            "image": "soft-fade-left",
+            "content": "soft-fade-right"
+          }
+        },
+        "cssClasses": {
+          "imageCol": "col-md-6 p-0 order-md-1 animate-box",
+          "contentCol": "col-md-6 p-0 bg-darkblack valign order-md-2 animate-box",
+          "imageWrapper": "img left",
+          "contentWrapper": "content"
+        }
+      },
+      {
+        "id": 2,
+        "image": {
+          "src": "../../assets/service-section-images/3.jpeg",
+          "alt": "Open To Sky Lounge",
+          "link": "#"
+        },
+        "content": {
+          "category": "Experiences",
+          "title": "Open To Sky Lounge",
+          "description": "Our stunning vessel also boasts an Open-Air Dance Floor on the top deck, where you can groove beneath the starlit sky, surrounded by the serene beauty of the Mandovi River. Immerse yourself in an unforgettable evening filled with music, entertainment, and an enchanting open-air ambiance.",
+          "buttonText": "Learn More",
+          "buttonLink": "#"
+        },
+        "layout": {
+          "imagePosition": "right",
+          "animationEffect": {
+            "image": "soft-fade-right",
+            "content": "soft-fade-left"
+          }
+        },
+        "cssClasses": {
+          "imageCol": "col-md-6 p-0 order-md-2 animate-box",
+          "contentCol": "col-md-6 bg-darkblack p-0 order-md-1 valign animate-box",
+          "imageWrapper": "img",
+          "contentWrapper": "content"
+        }
+      },
+      {
+        "id": 3,
+        "image": {
+          "src": "../../assets/service-section-images/2.jpg",
+          "alt": "VVIP Lounge",
+          "link": "#"
+        },
+        "content": {
+          "category": "Modern",
+          "title": "VVIP Lounge",
+          "description": "Discover unmatched luxury aboard Goa's Premium Cruise with the exclusive VVIP Lounge. Indulge in supreme comfort, elegant interiors, and breathtaking views from the cruise's most coveted spot. Whether relaxing with a drink or soaking in the serene Mandovi River, the VVIP Lounge redefines sophistication and exclusivity.",
+          "buttonText": "Learn More",
+          "buttonLink": "#"
+        },
+        "layout": {
+          "imagePosition": "left",
+          "animationEffect": {
+            "image": "soft-fade-left",
+            "content": "soft-fade-right"
+          }
+        },
+        "cssClasses": {
+          "imageCol": "col-md-6 p-0 order-md-1 animate-box",
+          "contentCol": "col-md-6 p-0 bg-darkblack valign order-md-2 animate-box",
+          "imageWrapper": "img left",
+          "contentWrapper": "content"
+        }
+      },
+      {
+        "id": 4,
+        "image": {
+          "src": "../../assets/service-section-images/1a.jpeg",
+          "alt": "Food & Beverages",
+          "link": "#"
+        },
+        "content": {
+          "category": "Experiences",
+          "title": "Food & Beverages",
+          "description": "The food and beverages at Nauti Amigo are truly exceptional! From delectable dishes to refreshing drinks, every bite and sip is crafted to perfection, offering a culinary experience that perfectly complements the luxury cruise ambiance.",
+          "buttonText": "Learn More",
+          "buttonLink": "#"
+        },
+        "layout": {
+          "imagePosition": "right",
+          "animationEffect": {
+            "image": "soft-fade-right",
+            "content": "soft-fade-left"
+          }
+        },
+        "cssClasses": {
+          "imageCol": "col-md-6 p-0 order-md-2 animate-box",
+          "contentCol": "col-md-6 bg-darkblack p-0 order-md-1 valign animate-box",
+          "imageWrapper": "img",
+          "contentWrapper": "content"
+        }
+      }
+    ],
+    "animations": {
+      "staggerDelay": 150,
+      "intersectionOptions": {
+        "rootMargin": "0px 0px -20% 0px",
+        "threshold": 0.1
+      },
+      "inViewClass": "in-view",
+      "transitionDelay": 100
+    }
+  }
+  

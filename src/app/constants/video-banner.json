@@ -1,0 +1,21 @@
+{
+    "backgroundImage": "assets/img/slider/2.jpeg",
+    "starRating": {
+      "count": 5,
+      "iconClass": "star-rating fa fa-star"
+    },
+    "subtitle": "Nauti Amigo Luxury Cruise",
+    "title": "Promotional Video",
+    "playButton": {
+      "iconClass": "fa-solid fa-play"
+    },
+    "video": {
+      "source": "assets/images/nautiamigo.mp4",
+      "type": "video/mp4",
+      "fallbackMessage": "Your browser does not support the video tag."
+    },
+    "modal": {
+      "closeButtonText": "×"
+    }
+  }
+  

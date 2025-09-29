@@ -1,23 +1,22 @@
 <section
   class="video-wrapper video section-padding bg-img bg-fixed"
-  [style.backgroundImage]="'url(assets/img/slider/2.jpeg)'"
+  [style.backgroundImage]="'url(' + config.backgroundImage + ')'"
 >
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2 text-center">
-        <span class ="star">
-            <i class="star-rating fa fa-star"></i>
-          <i class="star-rating fa fa-star"></i>
-          <i class="star-rating fa fa-star"></i>
-          <i class="star-rating fa fa-star"></i>
-          <i class="star-rating fa fa-star"></i>
+        <span class="star">
+          <i 
+            *ngFor="let star of starArray" 
+            [class]="config.starRating.iconClass">
+          </i>
         </span>
         <div class="section-subtitle">
-          <span>Nauti Amigo Luxury Cruise</span>
+          <span>{{ config.subtitle }}</span>
         </div>
         <div class="section-title">
-          <span>Promotional Video</span>
+          <span>{{ config.title }}</span>
         </div>
       </div>
     </div>
@@ -26,21 +25,22 @@
       <div class="text-center col-md-12">
         <div class="vid-butn" (click)="openVideo()">
           <span class="icon">
-            <i class="fa-solid fa-play"></i>
+            <i [class]="config.playButton.iconClass"></i>
           </span>
         </div>
       </div>
     </div>
   </div>
 
-  
   <div class="video-modal" *ngIf="isVideoOpen" (click)="closeVideo()">
     <div class="video-container" (click)="$event.stopPropagation()">
       <video controls autoplay>
-        <source src="assets/images/nautiamigo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        <source [src]="config.video.source" [type]="config.video.type" />
+        {{ config.video.fallbackMessage }}
       </video>
-      <button class="close-btn" (click)="closeVideo()">×</button>
+      <button class="close-btn" (click)="closeVideo()">
+        {{ config.modal.closeButtonText }}
+      </button>
     </div>
   </div>
 </section>

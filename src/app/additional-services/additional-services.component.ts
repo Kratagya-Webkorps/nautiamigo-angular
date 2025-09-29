@@ -1,13 +1,37 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import additionalServicesData from '../constants/additional-services.json';
 
-interface Service {
+interface ServiceConfig {
   id: number;
   title: string;
   description: string;
   icon: string;
   animationDelay: number;
   customClass?: string;
+}
+
+interface AdditionalServicesConfig {
+  section: {
+    subtitle: string;
+    title: string;
+    cssClasses: {
+      sectionWrapper: string;
+      container: string;
+      headingRow: string;
+      headingCol: string;
+      servicesRow: string;
+      serviceCol: string;
+      facilityBox: string;
+      animateBox: string;
+    };
+  };
+  services: ServiceConfig[];
+  animations: {
+    intersectionThreshold: number;
+    staggerDelay: number;
+    fadeInClass: string;
+  };
 }
 
 @Component({
@@ -19,14 +43,15 @@ interface Service {
 })
 export class AdditionalServicesComponent implements OnInit, AfterViewInit {
 
-  services: Service[] = [
-    { id: 1, title: 'MEETINGS', description: 'Pickup and Drop available from North Goa specific locations.', icon: 'fas fa-globe', animationDelay: 0 },
-    { id: 2, title: 'CONFERENCES', description: 'Complimentry drinks are included in the offerings.', icon: 'fas fa-glass-cheers', animationDelay: 200, customClass:"conferences" },
-    { id: 3, title: 'SEMINARS', description: 'Ride will be safe and secure for all the biddies joining.', icon: 'fas fa-chalkboard-teacher', animationDelay: 400, customClass: 'seminars' },
-    { id: 4, title: 'FILM SHOOT', description: 'Celebrate Your Last Night of Singledom on a Bachelorette Party Boat in Goa.', icon: 'fas fa-video', animationDelay: 0 },
-    { id: 5, title: 'BIRTHDAYS', description: 'Renewing your vows? Celebrating a lifetime of love with your husband or wife.', icon: 'fas fa-birthday-cake', animationDelay: 200 },
-    { id: 6, title: 'FAMILY EVENTS', description: 'Makes sense that you‘d want to throw a party for your loved one when it‘s their turn to move on.', icon: 'fas fa-users', animationDelay: 400, customClass: 'family-events' }
-  ];
+  config: AdditionalServicesConfig = additionalServicesData;
+
+  get services(): ServiceConfig[] {
+    return this.config.services;
+  }
+
+  get sectionConfig() {
+    return this.config.section;
+  }
 
   constructor() {}
 
@@ -36,7 +61,6 @@ export class AdditionalServicesComponent implements OnInit, AfterViewInit {
     this.initializeScrollAnimations();
   }
 
-  
   initializeScrollAnimations(): void {
     const observer = new IntersectionObserver(
       (entries, obs) => {
@@ -44,22 +68,31 @@ export class AdditionalServicesComponent implements OnInit, AfterViewInit {
           if (entry.isIntersecting) {
             const el = entry.target as HTMLElement;
             
-            
             setTimeout(() => {
-              el.classList.add('fadeInUp');
-            }, index * 200); 
-  
-            obs.unobserve(el); 
+              el.classList.add(this.config.animations.fadeInClass);
+            }, index * this.config.animations.staggerDelay);
+
+            obs.unobserve(el);
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: this.config.animations.intersectionThreshold }
     );
-  
-    const elements = document.querySelectorAll('.animate-box');
+
+    const elements = document.querySelectorAll(`.${this.config.section.cssClasses.animateBox}`);
     elements.forEach((el) => observer.observe(el));
   }
-  
 
-  onServiceHover(serviceId: number): void {}
+  onServiceHover(serviceId: number): void {
+    console.log(`Service ${serviceId} hovered`);
+  }
+
+  getServiceClasses(service: ServiceConfig): string {
+    const baseClasses = `${this.config.section.cssClasses.facilityBox} ${this.config.section.cssClasses.animateBox}`;
+    return service.customClass ? `${baseClasses} ${service.customClass}` : baseClasses;
+  }
+
+  getAnimationDelayStyle(delay: number): { [key: string]: string } {
+    return { 'animation-delay': `${delay}ms` };
+  }
 }

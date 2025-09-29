@@ -1,0 +1,11 @@
+{
+    "logoAlt": "Nauti Amigo Logo",
+    "phoneNumber": "9324105081",
+    "navigationItems": [
+      { "label": "Home", "href": "#hero", "hasDropdown": true },
+      { "label": "About", "href": "#about", "hasDropdown": false },
+      { "label": "Services", "href": "#services", "hasDropdown": false },
+      { "label": "Contact Us", "href": "#contact-us", "hasDropdown": false }
+    ]
+  }
+  

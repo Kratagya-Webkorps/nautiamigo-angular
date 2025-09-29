@@ -80,7 +80,6 @@
   text-align: left;
   background: #222222;
   padding: 25px 20px;
-  border-radius: 5px;
   transition: all 0.3s ease;
   width: 370px;
   height: 230px;
@@ -89,7 +88,7 @@
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  border: 2px solid #2b2b2b;
+  border: 2px solid rgba(255, 255, 255, 0.02);
 }
 
 

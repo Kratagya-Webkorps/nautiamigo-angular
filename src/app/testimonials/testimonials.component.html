@@ -1,11 +1,15 @@
-<section class="testimonials">
-  <div class="container">
-    <h6 class="heading">TESTIMONIALS</h6>
-    <h4 class="sub-heading">What Client's Say?</h4>
-    <div class="underline"></div>
+<section [class]="config.sectionClasses.wrapper">
+  <div [class]="config.sectionClasses.container">
+    <h6 [class]="config.sectionClasses.headingClass">
+      {{ config.headings.main }}
+    </h6>
+    <h4 [class]="config.sectionClasses.subHeadingClass">
+      {{ config.headings.sub }}
+    </h4>
+    <div [class]="config.sectionClasses.underlineClass"></div>
 
     <swiper-container
-      class="testimonials-swiper"
+      [class]="config.sectionClasses.swiperClass"
       pagination="true"
       pagination-clickable="true"
       space-between="30"
@@ -13,98 +17,34 @@
       loop="false"
       autoplay="false"
     >
-      <!-- First Testimonial Slide -->
-      <swiper-slide>
+      <swiper-slide *ngFor="let t of config.testimonials">
         <div class="testimonial-slide">
-         
-          
-          <img src="../../assets/img/quot.png" alt="quote" class="quote-mark-img">
+          <img
+            src="assets/img/quot.png"
+            alt="quote"
+            class="quote-mark-img"
+          />
 
           <div class="testimonial-content">
-            <p>
-              
-              Had a great experience....went with my family....better than other cruise as I have tried other one as well last year....they have Air conditioner Vip lounge as well, fun activities for kids, couples , dance, good food.....can surely try once if you want to have dinner cruise experience....crew is also very nice and helpful
-            </p>
+            <p>{{ t.quote }}</p>
           </div>
 
           <div class="testimonial-footer">
-            
             <div class="author-img">
-              <img src="../../assets/img/team/4.jpg" alt="Charul Arora" />
+              <img [src]="t.authorImage" [alt]="t.authorName" />
             </div>
-            <!-- Right: Stars, Name, Review -->
             <div class="author-details">
-              <div class="rating">⭐⭐⭐⭐⭐</div>
-              <h6>CHARUL ARORA</h6>
-              <span>Guest Review</span>
+              <div class="rating">
+                <ng-container *ngFor="let _ of generateStars(t.rating)">
+                  ⭐
+                </ng-container>
+              </div>
+              <h6>{{ t.authorName }}</h6>
+              <span>{{ t.authorTitle }}</span>
             </div>
           </div>
         </div>
       </swiper-slide>
-      
-      <swiper-slide>
-        <div class="testimonial-slide">
-          
-          <img src="../../assets/img/quot.png" alt="quote" class="quote-mark-img">
-
-          
-          <div class="testimonial-content">
-            <p>
-              
-              Great experience. Was there on the occasion of my wife’s bday and asked the hosts for a cake 10 mins before departure. Still the hosts especially Shelton was too helpful and got the same arranged. Thank you so much guys for making this happen.
-              Wonderful experience and had lots of fun. Definitely recommended.
-                                  
-            </p>
-          </div>
-
-          
-          <div class="testimonial-footer">
-            
-            <div class="author-img">
-              <img src="../../assets/img/team/1.jpg" alt="Sarvesh Kumar Rai" />
-            </div>
-            
-            <div class="author-details">
-              <div class="star-rating">⭐⭐⭐⭐⭐</div>
-              <h6>SARVESH KUMAR RAI</h6>
-              <span>Guest Review</span>
-            </div>
-          </div>
-        </div>
-      </swiper-slide>
-      
-      <swiper-slide>
-        <div class="testimonial-slide">
-          
-          <img src="../../assets/img/quot.png" alt="quote" class="quote-mark-img">
-
-          
-          <div class="testimonial-content">
-            <p>
-              
-              Had an amazing time at nauti Amigo cruise, The vip lounge was fantastic, and the food was spot on. Big thanks to the team for  their support. Truly a memorable experience
-              Highly recommend.
-                                  
-            </p>
-          </div>
-
-         
-          <div class="testimonial-footer">
-            
-            <div class="author-img">
-              <img src="../../assets/img/team/5.jpg" alt="Dolly Bajaj" />
-            </div>
-           
-            <div class="author-details">
-              <div class="rating">⭐⭐⭐⭐⭐</div>
-              <h6>DOLLY BAJAJ</h6>
-              <span>Guest Review</span>
-            </div>
-          </div>
-        </div>
-      </swiper-slide>
-
-      
     </swiper-container>
   </div>
 </section>

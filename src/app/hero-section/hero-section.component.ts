@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewEncapsulation } from '@angular/co
 import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
+import heroData from '../constants/hero-section.json';
 
 interface Slide {
   background: string;
@@ -16,44 +17,19 @@ interface Slide {
   selector: 'app-hero-section',
   imports: [CommonModule],
   templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.css',
+  styleUrls: ['./hero-section.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class HeroSectionComponent implements OnInit, AfterViewInit {
 
-  slides: Slide[] = [
-    {
-      background: 'assets/img/slider/1.jpeg',
-      stars: 5,
-      subtitle: 'EXPERIENCE THE LUXURY',
-      title: 'ENJOY A LUXURY EXPERIENCE',
-      buttonText: 'Our Offerings',
-      buttonLink: '#'
-    },
-    {
-      background: 'assets/img/slider/4.jpeg',
-      stars: 5,
-      subtitle: 'UNIQUE PLACE TO RELAX AND ENJOY',
-      title: 'THE PERFECT BASE FOR YOU',
-      buttonText: 'Our Offerings',
-      buttonLink: '#'
-    },
-    {
-      background: 'assets/img/slider/6.jpeg',
-      stars: 5,
-      subtitle: 'THE ULTIMATE LUXURY EXPERIENCE',
-      title: 'ENJOY THE BEST MOMENTS OF LIFE',
-      buttonText: 'Our Offerings',
-      buttonLink: '#'
-    }
-  ];
+  slides: Slide[] = heroData.slides;
 
-  // Reservation details
-  reservationPhone: string = '9324105081';
-  reservationText: string = 'Reservation';
+
+  reservationPhone: string = heroData.reservation.phone;
+  reservationText: string = heroData.reservation.text;
 
   ngOnInit() {
-   // console.log('Hero section initialized with Swiper');
+    // console.log('Hero section initialized with Swiper');
   }
 
   ngAfterViewInit() {
@@ -80,7 +56,6 @@ export class HeroSectionComponent implements OnInit, AfterViewInit {
         }
       });
 
-      
       const navBtns = document.querySelectorAll('.custom-nav .nav-btn');
       navBtns.forEach((btn, index) => {
         btn.addEventListener('click', () => swiper.slideToLoop(index));

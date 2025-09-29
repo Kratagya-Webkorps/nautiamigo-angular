@@ -1,25 +1,29 @@
-<section class="facilties section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 heading">
-          <div class="section-subtitle">NAUTI AMIGO Luxury Cruise</div>
-          <div class="section-title">ADDITIONAL SERVICES</div>
-        </div>
+<section [class]="sectionConfig.cssClasses.sectionWrapper" id="services">
+  <div [class]="sectionConfig.cssClasses.container">
+    <!-- Section Header -->
+    <div [class]="sectionConfig.cssClasses.headingRow">
+      <div [class]="sectionConfig.cssClasses.headingCol">
+        <div class="section-subtitle">{{ sectionConfig.subtitle }}</div>
+        <div class="section-title">{{ sectionConfig.title }}</div>
       </div>
-      <div class="row">
-        <div class="col-md-4" *ngFor="let service of services; let i = index">
-          <div 
-            class="single-facility animate-box" 
-            [ngClass]="service.customClass"
-            [style.animation-delay]="service.animationDelay + 'ms'"
-            (mouseenter)="onServiceHover(service.id)"
-          >
-            <span [class]="service.icon"></span>
-            <h5>{{ service.title }}</h5>
-            <p>{{ service.description }}</p>
-            
-          </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div [class]="sectionConfig.cssClasses.servicesRow">
+      <div 
+        [class]="sectionConfig.cssClasses.serviceCol" 
+        *ngFor="let service of services; let i = index"
+      >
+        <div 
+          [class]="getServiceClasses(service)"
+          [ngStyle]="getAnimationDelayStyle(service.animationDelay)"
+          (mouseenter)="onServiceHover(service.id)"
+        >
+          <span [class]="service.icon"></span>
+          <h5>{{ service.title }}</h5>
+          <p>{{ service.description }}</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

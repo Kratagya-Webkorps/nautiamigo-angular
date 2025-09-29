@@ -1,0 +1,33 @@
+{
+    "slides": [
+      {
+        "background": "assets/img/slider/1.jpeg",
+        "stars": 5,
+        "subtitle": "EXPERIENCE THE LUXURY",
+        "title": "ENJOY A LUXURY EXPERIENCE",
+        "buttonText": "Our Offerings",
+        "buttonLink": "#"
+      },
+      {
+        "background": "assets/img/slider/4.jpeg",
+        "stars": 5,
+        "subtitle": "UNIQUE PLACE TO RELAX AND ENJOY",
+        "title": "THE PERFECT BASE FOR YOU",
+        "buttonText": "Our Offerings",
+        "buttonLink": "#"
+      },
+      {
+        "background": "assets/img/slider/6.jpeg",
+        "stars": 5,
+        "subtitle": "THE ULTIMATE LUXURY EXPERIENCE",
+        "title": "ENJOY THE BEST MOMENTS OF LIFE",
+        "buttonText": "Our Offerings",
+        "buttonLink": "#"
+      }
+    ],
+    "reservation": {
+      "phone": "9324105081",
+      "text": "Reservation"
+    }
+  }
+  
